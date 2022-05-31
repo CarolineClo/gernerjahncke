@@ -1,0 +1,21 @@
+@import url("https://use.typekit.net/ajq5bje.css");
+
+:root {
+  --clr-pri: #fafaf7;
+  --clr-sec: #000;
+  --clr-ter: #fad3e1;
+
+  --fs-main: 1.5rem;
+  --fs-h2: 1.563rem;
+  --sp-h1: 3.125rem;
+
+  --ff-logo: hero-new, sans-serif;
+  --ff-heading: lexia-mono, serif;
+  --ff-main: hero-new, sans-serif;
+
+  --ff-wght-l: 600;
+  --ff-wght-h: 700;
+  --ff-wght-m: 300;
+
+  --border-wght: 1px;
+}
