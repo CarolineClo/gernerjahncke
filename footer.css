@@ -1,0 +1,144 @@
+@import url("https://use.typekit.net/ajq5bje.css");
+
+:root {
+  --clr-pri: #fafaf7;
+  --clr-sec: #000;
+  --clr-ter: #fad3e1;
+
+  --ff-header: hero-new, sans-serif;
+  --ff-heading: lexia-mono, serif;
+  --ff-main: hero-new, sans-serif;
+
+  /* Hero New Font-Sizes */
+  --h-semibold: 600;
+  --h-light: 300;
+  --h-ultralight: 200;
+
+  /* Lexia Mono Font-Sizes */
+  --l-bold: 700;
+
+  --grid-gap: 1px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap);
+  background-color: var(--clr-pri);
+  font-family: var(--ff-main);
+  text-transform: uppercase;
+}
+
+#homofaber {
+width: 20%;
+}
+
+#first_container_footer {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  background-color: var(--clr-sec);
+  color: var(--clr-pri);
+  padding: 1rem;
+}
+
+#social_media {
+  display: none;
+}
+
+#second_container_footer {
+background-color: var(--clr-sec);
+color:var(--clr-pri)
+}
+
+
+
+#third_container_footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #000;
+flex-grow: 1;
+  align-items: center;
+  background-color: var(--clr-sec);
+  color: var(--clr-pri)
+}
+
+#adress {
+  margin-top: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color:var(--clr-pri);
+  padding: 0;
+}
+
+
+
+.social_media_icon {
+  width: 50%;
+  height: auto;
+}
+
+#social_media_section {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+/*MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES*/
+
+
+
+  @media only screen and (min-width: 500px) {
+    footer {
+      display: flex;
+      flex-direction: row;
+      font-size: 1rem;
+  }
+
+  #social_media {
+    display: block;
+  }
+
+  #social_media_section {
+    display: none;
+  }
+
+  #second_container_footer {
+    display: flex;
+    flex-direction: row;
+   gap: 4em;
+  }
+
+  #adress {
+    margin-top: 0;
+  }
+
+  #third_container_footer {
+    gap: 4em;
+  }
+
+  #homofaber {
+    width: 4rem;
+  }
+
+  }
+
+  @media only screen and (min-width: 850px) {
+    footer {
+      font-size: 1rem;
+    }
+
+    #homofaber {
+      width: 6rem;
+    }
+
+ }
