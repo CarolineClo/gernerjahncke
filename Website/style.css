@@ -19,8 +19,8 @@
 
   --grid-gap: 1px;
 
-  *margin: 0;
-  *padding: 0;
+  *{margin: 0;
+  padding: 0;}
 }
 
 body {
@@ -29,7 +29,6 @@ body {
 
 .container {
   background-color: var(--clr-pri);
-  border: 1px solid black;
 }
 
 h2,
@@ -46,6 +45,7 @@ h1 {
 p {
   font-family: var(--ff-main);
   font-weight: var(--h-light);
+  margin: 0;
 }
 
 h6 {
@@ -59,3 +59,12 @@ h5 {
   font-weight: var(--h-ultralight);
 }
 
+.contactmain{
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+@media screen {
+  
+}
