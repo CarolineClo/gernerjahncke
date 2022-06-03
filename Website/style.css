@@ -347,5 +347,84 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: none;
     gap: 1px;
+
+  }
+}
+/* product page- Caroline Mobil view  */
+
+.productmain .otherviews {
+  display: none;
+}
+
+.blackbackground {
+  background-color: var(--clr-sec);
+}
+
+.productmain .moreproducts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--grid-gap);
+}
+
+main.productmain {
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap);
+}
+
+.productmain img {
+  width: 100%;
+}
+
+.productmain .productinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem;
+}
+
+.productmain h2 {
+  font-size: 10vw;
+  text-transform: uppercase;
+}
+
+.productmain h2.morecollection {
+  font-size: 6vw;
+  text-align: center;
+}
+
+.productmain h6 {
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.productmain h6.price {
+  font-weight: var(--h-semibold);
+}
+
+.productmain .basket {
+  color: var(--clr-pri);
+}
+
+@media screen and (min-width: 500px) {
+  main.productmain {
+    background-color: red;
+  }
+  .productmain .otherviews {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  main.productmain {
+    background-color: blue;
   }
 }
