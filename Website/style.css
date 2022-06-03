@@ -19,16 +19,19 @@
 
   --grid-gap: 1px;
 }
+
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: var(--clr-sec);
 }
 
 .container {
   background-color: var(--clr-pri);
+  width: 100%;
 }
 
 h2,
@@ -45,6 +48,7 @@ h1 {
 p {
   font-family: var(--ff-main);
   font-weight: var(--h-light);
+  margin: 0;
 }
 
 h6 {
@@ -66,4 +70,282 @@ h6,
 p {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+/*CONTACTPAGE*/
+
+.contactmain {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.contactgrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.contactimg {
+  order: -1;
+}
+
+.contactair {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .contactmain {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
+    gap: 1px;
+  }
+
+  .contactgrid {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+  }
+
+  .contactimg {
+    order: 0;
+  }
+
+  .contactair {
+    display: block;
+  }
+}
+
+/*COMISSION PAGE*/
+.comissionmain {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.formerworkgrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.formerworksection {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.comissionnav,
+.comissionsecondimage {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .comissionheroimg {
+    width: 100%;
+  }
+
+  .comissionnav,
+  .comissionsecondimage {
+    display: block;
+  }
+
+  .comissionnav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+  }
+
+  .comissionnav a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: var(--ff-heading);
+    color: var(--clr-sec);
+    font-weight: var(--l-bold);
+  }
+
+  .comissionnav a:hover {
+    background-color: #000;
+    color: var(--clr-pri);
+  }
+
+  .comissionintrosection {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1px;
+  }
+
+  .formerworksection {
+    gap: 1px;
+  }
+}
+
+/*OUR PROCESS PAGE*/
+.ourprocessmain {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.processvideosection {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.ourprocessmain video {
+  width: auto;
+}
+
+.ourprocessnav {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px;
+}
+
+.ourprocessnav a:hover {
+  background-color: #000;
+  color: #fafaf7;
+}
+
+.ourprocessnav a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: var(--ff-heading);
+  color: var(--clr-sec);
+  font-weight: var(--l-bold);
+}
+
+.aboutussection1 {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.aboutussection1img {
+  display: none;
+}
+
+.resumebuttonmobile {
+  background-color: var(--clr-sec);
+  display: flex;
+  justify-content: end;
+}
+
+.resumebuttonmobile a {
+  color: var(--clr-pri);
+  text-decoration: none;
+  font-family: var(--ff-main);
+  font-weight: var(--h-ultralight);
+  margin-right: 1rem;
+}
+
+.resumebuttonmobile a:hover {
+  background-color: var(--clr-pri);
+  color: #000;
+}
+.aboutussection2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.ourprocessessection1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.ourprocessessection2 {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.ourprocessessectionimg {
+  display: none;
+}
+
+.featuredworksection {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+@media screen and (min-width: 600px) {
+  .processvideosection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    gap: 1px;
+  }
+
+  .aboutussectionmobileimg {
+    display: none;
+  }
+
+  .aboutussection1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: none;
+    gap: 1px;
+  }
+
+  .aboutussection1img {
+    display: block;
+  }
+
+  .aboutussection2 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: none;
+    gap: 1px;
+  }
+
+  .aboutussectiontwoimg {
+    order: 2;
+  }
+
+  .resumebuttonmobile {
+    display: none;
+  }
+
+  .resumebutton {
+    background-color: var(--clr-sec);
+    display: flex;
+    justify-content: end;
+  }
+
+  .resumebutton a {
+    color: var(--clr-pri);
+    text-decoration: none;
+    font-family: var(--ff-main);
+    font-weight: var(--h-ultralight);
+    margin-right: 1rem;
+  }
+
+  .ourprocessessection1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: none;
+    gap: 1px;
+  }
+
+  .ourprocessessection2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    gap: 1px;
+  }
+
+  .ourprocessessectionimg {
+    display: block;
+  }
+
+  .featuredworksection {
+    gap: 1px;
+  }
+
+  .ourprocessnav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: none;
+    gap: 1px;
+  }
 }
