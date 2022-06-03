@@ -20,15 +20,18 @@
   --grid-gap: 1px;
 }
 
-  *{margin: 0;
-  padding: 0;}
-  
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--clr-sec);
 }
 
 .container {
   background-color: var(--clr-pri);
+  width: 100%;
 }
 
 h2,
@@ -59,12 +62,103 @@ h5 {
   font-weight: var(--h-ultralight);
 }
 
-.contactmain{
+
+/*CONTACTPAGE*/
+
+.contactmain {
   display: flex;
   flex-direction: column;
   gap: 1px;
 }
 
-@media screen {
+.contactgrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.contactimg {
+  order: -1;
+}
+
+.contactair {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .contactmain {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 1px;
+  }
+
+  .contactgrid {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+  }
+
+  .contactimg {
+    order: 0;
+  }
+
+  .contactair {
+    display: block;
+  }
+
+}
+
+
+/*COMISSION PAGE*/
+.comissionmain{
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.formerworkgrid{
+ display: flex;
+ flex-direction: column;
+ gap: 1px;
+}
+
+.formerworksection{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.comissionnav, .comissionsecondimage{
+  display: none;
+}
+
+@media screen and (min-width: 600px){
+
+.comissionheroimg{
+  width: 100%;
+}
   
+.comissionnav, .comissionsecondimage{
+  display: block;
+}
+
+.comissionnav {
+  list-style: none;
+  display: grid;
+grid-template-columns: 1fr 1fr;
+  gap: 1px;
+}
+
+
+.comissionintrosection{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1px;
+}
+
+
+.formerworksection{
+gap: 1px;
+}
+
 }
