@@ -18,11 +18,11 @@
   --l-bold: 700;
 
   --grid-gap: 1px;
-
-  *margin: 0;
-  *padding: 0;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: var(--clr-sec);
 }
@@ -58,6 +58,6 @@ h5 {
   font-weight: var(--h-ultralight);
 }
 
-.contactmain{
+.contactmain {
   display: flex;
 }
