@@ -90,6 +90,10 @@ p {
   order: -1;
 }
 
+.contactimg img {
+  width: 100%;
+}
+
 .contactair {
   display: none;
 }
@@ -110,6 +114,8 @@ p {
 
   .contactimg {
     order: 0;
+    display: flex;
+    align-items: center;
   }
 
   .contactair {
@@ -132,7 +138,25 @@ p {
 
 .formerworksection {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1.5fr;
+}
+
+.formerworksection img {
+  width: 100%;
+}
+
+.formerworksection .container:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+.comissionheroimg {
+  display: flex;
+  justify-content: center;
+}
+
+.comissionheroimg img {
+  width: 100%;
 }
 
 .comissionnav,
@@ -141,13 +165,17 @@ p {
 }
 
 @media screen and (min-width: 600px) {
-  .comissionheroimg {
-    width: 100%;
+  .comissionheroimg img {
+    width: 80%;
   }
 
   .comissionnav,
   .comissionsecondimage {
     display: block;
+  }
+
+  .comissionsecondimage img {
+    width: 100%;
   }
 
   .comissionnav {
@@ -163,6 +191,8 @@ p {
     font-family: var(--ff-heading);
     color: var(--clr-sec);
     font-weight: var(--l-bold);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .comissionnav a:hover {
@@ -190,11 +220,22 @@ p {
 
 .processvideosection {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
 }
 
-.ourprocessmain video {
-  width: auto;
+.processvideosection .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.processvideosection img {
+  max-width: 80%;
+  padding-top: 1rem;
+}
+
+.processvideosection p {
+  max-width: 60%;
 }
 
 .ourprocessnav {
@@ -215,14 +256,23 @@ p {
   font-family: var(--ff-heading);
   color: var(--clr-sec);
   font-weight: var(--l-bold);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
+.aboutussectionmobileimg img {
+  width: 100%;
+}
 .aboutussection1 {
   display: grid;
   grid-template-rows: 1fr;
 }
 
 .aboutussection1img {
+  display: none;
+}
+
+.resumebutton {
   display: none;
 }
 
@@ -238,6 +288,8 @@ p {
   font-family: var(--ff-main);
   font-weight: var(--h-ultralight);
   margin-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .resumebuttonmobile a:hover {
@@ -249,9 +301,23 @@ p {
   grid-template-rows: 1fr 1fr;
 }
 
+.aboutussectiontwoimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutussectiontwoimg img {
+  width: 100%;
+}
+
 .ourprocessessection1 {
   display: grid;
   grid-template-rows: 1fr 1fr;
+}
+
+.ourprocessessection1 img {
+  width: 100%;
 }
 
 .ourprocessessection2 {
@@ -265,7 +331,16 @@ p {
 
 .featuredworksection {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1.5fr;
+}
+
+.featuredworksection img {
+  width: 100%;
+}
+
+.featuredworksection .container:nth-child(2) {
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 600px) {
@@ -274,6 +349,11 @@ p {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
     gap: 1px;
+  }
+
+  .processvideosection img {
+    max-width: 100%;
+    padding-top: 0%;
   }
 
   .aboutussectionmobileimg {
@@ -291,6 +371,10 @@ p {
     display: block;
   }
 
+  .aboutussection1img img {
+    width: 100%;
+  }
+
   .aboutussection2 {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -300,6 +384,10 @@ p {
 
   .aboutussectiontwoimg {
     order: 2;
+  }
+
+  .aboutussectiontwoimg img {
+    width: 100%;
   }
 
   .resumebuttonmobile {
@@ -318,6 +406,8 @@ p {
     font-family: var(--ff-main);
     font-weight: var(--h-ultralight);
     margin-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .ourprocessessection1 {
@@ -325,6 +415,10 @@ p {
     grid-template-columns: 1fr 3fr;
     grid-template-rows: none;
     gap: 1px;
+  }
+
+  .ourprocessessection1 img {
+    width: 100%;
   }
 
   .ourprocessessection2 {
@@ -338,8 +432,17 @@ p {
     display: block;
   }
 
+  .ourprocessessectionimg img {
+    width: 100%;
+  }
+
   .featuredworksection {
     gap: 1px;
+  }
+
+  .featuredworksection img {
+    width: 100%;
+    grid-template-columns: 2fr 1.5fr;
   }
 
   .ourprocessnav {
@@ -347,7 +450,6 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: none;
     gap: 1px;
-
   }
 }
 /* product page- Caroline Mobil view  */
