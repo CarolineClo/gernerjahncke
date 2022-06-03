@@ -175,3 +175,142 @@ p {
     gap: 1px;
   }
 }
+
+/*OUR PROCESS PAGE*/
+.ourprocessmain {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.ourprocessmain video {
+  width: auto;
+}
+
+.ourprocessnav {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px;
+}
+
+.ourprocessnav a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: var(--ff-heading);
+  color: var(--clr-sec);
+  font-weight: var(--l-bold);
+}
+
+.aboutussection1 {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.aboutussection1img {
+  display: none;
+}
+
+.resumebuttonmobile {
+  background-color: var(--clr-sec);
+  display: flex;
+  justify-content: end;
+}
+
+.resumebuttonmobile a {
+  color: var(--clr-pri);
+  text-decoration: none;
+  font-family: var(--ff-main);
+  font-weight: var(--h-ultralight);
+}
+
+.aboutussection2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.ourprocessessection1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.ourprocessessection2 {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.ourprocessessectionimg {
+  display: none;
+}
+
+.featuredworksection {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+@media screen and (min-width: 600px) {
+  .aboutussectionmobileimg {
+    display: none;
+  }
+
+  .aboutussection1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: none;
+    gap: 1px;
+  }
+
+  .aboutussection1img {
+    display: block;
+  }
+
+  .aboutussection2 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: none;
+    gap: 1px;
+  }
+
+  .aboutussectiontwoimg {
+    order: 2;
+  }
+
+  .resumebuttonmobile {
+    display: none;
+  }
+
+  .resumebutton {
+    background-color: var(--clr-sec);
+    display: flex;
+    justify-content: end;
+  }
+
+  .resumebutton a {
+    color: var(--clr-pri);
+    text-decoration: none;
+    font-family: var(--ff-main);
+    font-weight: var(--h-ultralight);
+  }
+
+  .ourprocessessection1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: none;
+    gap: 1px;
+  }
+
+  .ourprocessessection2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    gap: 1px;
+  }
+
+  .ourprocessessectionimg {
+    display: block;
+  }
+
+  .featuredworksection {
+    gap: 1px;
+  }
+}
