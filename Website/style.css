@@ -29,7 +29,6 @@ body {
 
 .container {
   background-color: var(--clr-pri);
-  border: 1px solid black;
 }
 
 h2,
@@ -59,3 +58,6 @@ h5 {
   font-weight: var(--h-ultralight);
 }
 
+.contactmain{
+  display: flex;
+}
