@@ -483,14 +483,6 @@ main.productmain {
   flex-direction: column;
 }
 
-p,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 1rem;
-}
 
 .productmain h2 {
   font-size: 10vw;
@@ -529,4 +521,271 @@ h6 {
   main.productmain {
     background-color: blue;
   }
+}
+
+
+/*LANDING PAGE */
+
+.landingmain{
+  display: grid;
+grid-template-columns: 1fr ;
+  gap: 1px;
+}
+
+.landinggrid2{
+  display: grid;
+  grid-template-columns: 1fr ;
+    gap: 1px;
+}
+.navimg{
+    background-image: url("Images/flasksitu.webp");
+  
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+} 
+
+
+.navcontainer{
+  display: none;
+}
+
+.landingsecondimg img{
+width: 100%;
+}
+
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.totayamasection, .reykjaviksection, .gallokkensection{
+  display: grid;
+  grid-template-columns: 1fr;
+gap: 1px;}
+
+.landingpagenav{
+  display: none;
+}
+
+.sectionsecondimg{
+  display: none;
+}
+
+.totayamasection img{
+  width: 100%;
+}
+
+.gallokkensection img{
+  width: 100%;
+}
+
+.reykjaviksection img{
+  width: 100%;
+}
+
+.imagehover{
+  display: none;
+}
+
+@media screen and (min-width: 800px){
+.navimg{
+  height: 100vh;
+}
+  .navcontainer{
+display: block;
+width: 100%;
+height: 100%;
+position: absolute;
+  }
+
+  /* The navbar */
+.topnav {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+height: 100%;
+}
+
+/* Navbar links */
+.topnav a {
+  font-family: var(--ff-heading);
+  float: left;
+  color: var(--clr-sec);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 3rem;
+  display: grid; 
+  align-content: center;
+  text-transform: uppercase;
+  font-weight: var(--l-bold);
+}
+
+.leftnav{
+  justify-content: start;
+  margin-left: 1rem;
+}
+
+.rightnav{
+  justify-content: end;
+  margin-right: 1rem;
+}
+
+.topnav a:hover {
+  color: var(--clr-pri);
+}
+
+.landingsecondimg{
+  display: block;
+}
+
+.welcomesection{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+gap: 1px;
+}
+
+.welcomesection .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcomesection p, .welcomesection h2{
+  max-width: 400px;
+margin: auto;
+align-content: center;
+}
+
+.landingpagenav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+}
+
+.landingpagenav a:hover {
+  background-color: #000;
+  color: #fafaf7;
+}
+
+.landingpagenav a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: var(--ff-heading);
+  color: var(--clr-sec);
+  font-weight: var(--l-bold);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+.sectionsecondimg{
+  display: block;
+}
+
+.totayamasection, .reykjaviksection{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr;
+}
+
+.totayamasection .sectionsecondimg, .reykjaviksection .sectionsecondimg{
+grid-column-start: 2;
+grid-row-start: 1;
+grid-row-end: 4;
+}
+
+.sectionsecondimg{
+  display: grid;
+  align-items: center;
+}
+
+.gallokkensection{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr;
+}
+
+.gallokkensection .sectionsecondimg{
+  grid-column-start: 1;
+grid-row-start: 1;
+grid-row-end: 4;
+}
+
+.landingmain p{
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.totayamasection p, .reykjaviksection p, .gallokkensection p{
+  max-width: 400px;
+}
+
+.landingproductimage{
+  position: relative;
+}
+
+.imagehover {
+  position: absolute;
+  display: grid;
+  grid-template-rows: 1fr 2fr 0.4fr 0.4fr;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.10);
+  color: var(--clr-sec);
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.imagehover .price{
+  display: grid;
+  max-width: 100%;
+  margin: 0;
+  justify-content: end;
+  align-content: center;
+  text-decoration: none;
+  border-top: 1px solid black;
+  padding-right: 1rem;
+}
+
+.imagehover a{
+  display: grid;
+  justify-content: end;
+  align-content: center;
+  text-decoration: none;
+  border-top: 1px solid black;
+  padding-right: 1rem;
+  text-transform: uppercase;
+  font-family: var(--ff-main);
+  color: #000;
+}
+
+.landingproductimage:hover .imagehover {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
 }
