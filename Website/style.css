@@ -92,6 +92,7 @@ p {
 
 .contactimg img {
   width: 100%;
+  padding: 2rem;
 }
 
 .contactair {
@@ -138,16 +139,23 @@ p {
 
 .formerworksection {
   display: grid;
-  grid-template-columns: 2fr 1.5fr;
+  grid-template-columns: 1fr 1fr;
 }
 
-.formerworksection img {
-  width: 100%;
+.formerworksection .container:nth-child(2){
+  display: grid;
+  justify-content: center;
 }
 
 .formerworksection .container:nth-child(2) {
   display: flex;
   align-items: center;
+}
+
+.formerworksection img{
+  padding: 2rem;
+  max-width: 200px;
+
 }
 
 .comissionheroimg {
@@ -164,9 +172,9 @@ p {
   display: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .comissionheroimg img {
-    width: 80%;
+    width: 100%;
   }
 
   .comissionnav,
@@ -174,8 +182,15 @@ p {
     display: block;
   }
 
+  .comissionsecondimage{
+    display: grid;
+    justify-content: center;
+  }
   .comissionsecondimage img {
     width: 100%;
+    padding: 2rem;
+    max-width: 200px;
+
   }
 
   .comissionnav {
@@ -207,6 +222,7 @@ p {
   }
 
   .formerworksection {
+    grid-template-columns: 3fr 1.5fr;
     gap: 1px;
   }
 }
@@ -308,7 +324,8 @@ p {
 }
 
 .aboutussectiontwoimg img {
-  width: 100%;
+   max-width:300px;
+   padding: 2rem;
 }
 
 .ourprocessessection1 {
@@ -368,11 +385,13 @@ p {
   }
 
   .aboutussection1img {
-    display: block;
+    display: grid;
+    justify-content: center;
   }
 
   .aboutussection1img img {
-    width: 100%;
+    max-width: 200px;
+    padding: 2rem;
   }
 
   .aboutussection2 {
@@ -418,7 +437,8 @@ p {
   }
 
   .ourprocessessection1 img {
-    width: 100%;
+    max-width: 200px;
+    padding: 2rem;
   }
 
   .ourprocessessection2 {
@@ -429,11 +449,13 @@ p {
   }
 
   .ourprocessessectionimg {
-    display: block;
+    display: grid;
+    justify-content: center;
   }
 
   .ourprocessessectionimg img {
-    width: 100%;
+    max-width: 200px;
+    padding: 2rem;
   }
 
   .featuredworksection {
@@ -653,7 +675,13 @@ h6 {
   }
 
   .landingsecondimg {
-    display: block;
+    display: grid;
+    justify-content: center;
+  }
+
+  .landingsecondimg img{
+    max-width: 200px;
+    padding: 2rem;
   }
 
 .carrousel{
