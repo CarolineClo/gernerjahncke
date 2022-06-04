@@ -818,8 +818,16 @@ h6 {
     max-width: 400px;
   }
 
+
+
+  .landingproductimage img{
+    max-height: 300px;
+  }
+
   .landingproductimage {
     position: relative;
+    display: grid;
+    justify-content: center;
   }
 
   .imagehover {
