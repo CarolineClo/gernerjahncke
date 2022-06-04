@@ -60,6 +60,68 @@ h5 {
 
 /* product page- Caroline Mobil view  */
 
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 1rem;
+}
+/* carousel mobile view */
+.productmain .carousel {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.productmain .slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.productmain .slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0;
+}
+
+.productmain .slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.productmain .carousel-button {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(250, 250, 247, 0.5);
+  padding: 0 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.productmain button.prev {
+  left: 1rem;
+}
+
+.productmain button.next {
+  right: 1rem;
+}
+
+.productmain .invisible {
+  display: none;
+}
+
 .productmain .otherviews {
   display: none;
 }
@@ -89,15 +151,6 @@ main.productmain {
   flex-direction: column;
 }
 
-p,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 1rem;
-}
-
 .productmain h2 {
   font-size: 10vw;
   text-transform: uppercase;
@@ -122,17 +175,27 @@ h6 {
 }
 
 @media screen and (min-width: 500px) {
-  main.productmain {
+  .productbody {
     background-color: red;
   }
-  .productmain .otherviews {
-    display: flex;
-    flex-direction: column;
+  .productmain {
+    background-color: red;
   }
 }
 
 @media screen and (min-width: 740px) {
-  main.productmain {
-    background-color: blue;
+  .productmain .otherviews {
+    display: flex;
+    flex-direction: column;
+  }
+  .firstproduct {
+    justify-content: center;
+  }
+  .productmain .allproductimages {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+  }
+  .productmain .moreproducts {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
