@@ -172,6 +172,20 @@ p {
   display: none;
 }
 
+
+.formerworksection img {
+  max-width: 100px;
+min-width: 100px;
+  
+}
+
+.formerworksection .container:last-of-type{
+  display: grid;
+  align-content: center;
+}
+
+
+
 @media screen and (min-width: 700px) {
   .comissionheroimg img {
     width: 100%;
@@ -225,6 +239,17 @@ p {
     grid-template-columns: 3fr 1.5fr;
     gap: 1px;
   }
+
+  .formerworksection img {
+    max-width: 200px;
+    
+  }
+  
+  .formerworksection .container:last-of-type{
+    display: grid;
+    align-content: center;
+  }
+  
 }
 
 /*OUR PROCESS PAGE*/
@@ -355,10 +380,19 @@ p {
   width: 100%;
 }
 
-.featuredworksection .container:nth-child(2) {
-  display: flex;
-  align-items: center;
+
+
+.featuredworksection img {
+  max-width: 100px;
+min-width: 100px;
+  
 }
+
+.featuredworksection .container:last-of-type{
+  display: grid;
+  align-content: center;
+}
+
 
 @media screen and (min-width: 600px) {
   .processvideosection {
@@ -462,9 +496,15 @@ p {
     gap: 1px;
   }
 
+  .featuredworksection .container:last-of-type{
+    display: grid;
+    justify-content: center;
+  }
+
   .featuredworksection img {
-    width: 100%;
-    grid-template-columns: 2fr 1.5fr;
+    max-width: 200px;
+    padding: 2rem;
+    
   }
 
   .ourprocessnav {
