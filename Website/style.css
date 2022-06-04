@@ -592,12 +592,17 @@ h6 {
 .reykjaviksection img {
   width: 100%;
 }
-
+.landingproductimage{
+  display: none;
+}
 .imagehover {
   display: none;
 }
 
 @media screen and (min-width: 800px) {
+  .landingproductimage{
+    display: block;
+  }
   .navimg {
     height: 100vh;
   }
@@ -650,6 +655,10 @@ h6 {
   .landingsecondimg {
     display: block;
   }
+
+.carrousel{
+  display: none;
+}
 
   .welcomesection {
     display: grid;
