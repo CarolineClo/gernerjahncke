@@ -10,7 +10,7 @@
   <body class="productbody">
     <header></header>
     <main class="productmain">
-      <section aria-label="Product Images">
+      <section class="mobileslide" aria-label="Product Images">
         <div class="carousel" data-carousel>
           <button class="carousel-button prev" data-carousel-button="prev">
             &lt;
@@ -21,28 +21,27 @@
           <ul data-slides>
             <li class="slide" data-active>
               <img
-                class="firstproduct container"
+                class="container"
                 src="images/flask1.webp"
                 alt="A Gerner Jahncke flask"
               />
             </li>
             <li class="slide">
               <img
-                class="otherview container"
+                class="container"
                 src="images/flask2.webp"
                 alt="A gerner Jahncke flask on it's side"
               />
             </li>
             <li class="slide">
               <img
-                class="otherview container"
+                class="container"
                 src="Images/flaskmacro.webp"
                 alt="A close up photo pf a gerner Jahncke flask"
               />
             </li>
             <li class="slide">
               <img
-                class="otherview"
                 src="Images/flasksitu.webp"
                 alt="someone holding two Gerner Jahncke flasks"
               />
@@ -50,21 +49,7 @@
           </ul>
         </div>
       </section>
-      <div class="invisible">
-        <div class="container mainproduct">
-          <img
-            class="firstproduct"
-            src="images/flask1.webp"
-            alt="A Gerner Jahncke flask"
-          />
-        </div>
-        <div class="container">
-          <img
-            class="otherview"
-            src="images/flask2.webp"
-            alt="A gerner Jahncke flask on it's side"
-          />
-        </div>
+      <div class="deskviewimages">
         <div class="container">
           <img
             class="otherview"
@@ -75,9 +60,25 @@
         <div class="container">
           <img
             class="otherview"
-            src="images/flasksitu.webp"
-            alt="someone holding two Gerner Jahncke flasks"
+            src="images/flask2.webp"
+            alt="A gerner Jahncke flask on it's side"
           />
+        </div>
+          <div class="container mainproduct">
+            <img
+              class="firstproduct"
+              src="images/flask1.webp"
+              alt="A Gerner Jahncke flask"
+            />
+          </div>
+          
+          <div class="container">
+            <img
+              class="otherview"
+              src="images/flasksitu.webp"
+              alt="someone holding two Gerner Jahncke flasks"
+            />
+          </div>
         </div>
       </div>
       <div class="container">
@@ -92,6 +93,7 @@
           <p>10cm x 20cm</p>
         </section>
       </div>
+      <section class="caresendpriceadd">
       <div class="container">
         <h6 class="care">Care Instructions</h6>
       </div>
@@ -104,7 +106,8 @@
       <div class="basket">
         <h6>Add to basket</h6>
       </div>
-      <div class="container">
+    </section>
+      <div class="container morefrom">
         <h2 class="morecollection">More from the collection</h2>
       </div>
       <section class="blackbackground moreproducts">
