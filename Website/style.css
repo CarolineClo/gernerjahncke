@@ -16,7 +16,7 @@
 
   /* Lexia Mono Font-Sizes */
   --l-bold: 700;
-
+  --ff-logo: 
   --grid-gap: 1px;
 }
 
@@ -28,6 +28,24 @@
 body {
   background-color: var(--clr-sec);
 }
+
+/* HEADER START */
+.header {
+  background-color: var(--clr-pri);
+  width: 100vw;
+}
+
+#headerTitleMobile {
+  font-family: var(--ff-header);
+  font-size: 3.5rem;
+  display: inline;
+  width: 10%;
+  text-align: center;
+  padding: 2% 0% 2% 0%;
+}
+
+
+/* HEADER END */
 
 .container {
   background-color: var(--clr-pri);
@@ -95,6 +113,16 @@ p {
 }
 
 @media screen and (min-width: 600px) {
+
+  #headerTitleDesktop {
+    font-family: var(--ff-header);
+    font-size: 3.5rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 2% 0% 2% 0%;
+  }
+
   .contactmain {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -139,6 +167,8 @@ p {
 .comissionsecondimage {
   display: none;
 }
+
+/* SAME MEDIA QUERY WRITTEN TWICE???????? VVVVV/////////////////////////////////////////// */
 
 @media screen and (min-width: 600px) {
   .comissionheroimg {
