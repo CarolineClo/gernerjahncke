@@ -80,7 +80,8 @@ h1 {
   font-weight: var(--h-semibold);
 }
 
-p, a {
+p,
+a {
   font-family: var(--ff-main);
   font-weight: var(--h-light);
   margin: 0;
@@ -140,7 +141,6 @@ p {
 }
 
 @media screen and (min-width: 600px) {
-
   /* Header Stuff STARTS ///////////////////////////////////////// */
   #headerTitleMobile {
     display: none;
@@ -151,12 +151,12 @@ p {
   }
 
   .header {
-    position:absolute;
+    position: absolute;
     width: 100%;
     height: 120px;
   }
 
-  #navLogo>svg {
+  #navLogo > svg {
     padding-left: 17%;
   }
 
@@ -173,7 +173,7 @@ p {
     border-bottom: 1px solid black;
   }
 
-  #underHeader>div{
+  #underHeader > div {
     background-color: #fafaf7;
     max-height: 100%;
     display: flex;
@@ -181,7 +181,7 @@ p {
     padding: 10px;
   }
 
-  #underHeader>div>a{
+  #underHeader > div > a {
     display: block;
     margin: auto;
     text-align: center;
@@ -190,7 +190,6 @@ p {
   #navlogo:hover {
     cursor: pointer;
   }
-
 
   #headerTitleDesktop {
     font-family: var(--ff-header);
@@ -202,7 +201,6 @@ p {
   }
 
   /* Header Stuff ENDS ///////////////////////////////////////// */
-
 
   .contactmain {
     display: grid;
@@ -284,7 +282,6 @@ p {
   display: grid;
   align-content: center;
 }
-
 
 @media screen and (min-width: 600px) {
   .comissionheroimg {
@@ -749,6 +746,7 @@ main.productmain {
 }
 
 @media screen and (min-width: 768px) {
+  /* product page on desktop */
   main.productmain {
     display: grid;
     grid-template-columns: 50% 1fr;
@@ -1004,7 +1002,9 @@ main.productmain {
     align-items: center;
   }
 
-  .gallokkensection p, .totayamasection p, .reykjaviksection p{
+  .gallokkensection p,
+  .totayamasection p,
+  .reykjaviksection p {
     max-width: 500px;
     margin: auto;
   }
@@ -1023,10 +1023,8 @@ main.productmain {
 
   .landingmain p {
     display: grid;
-   margin-left: 1rem;
+    margin-left: 1rem;
   }
-
-
 
   .landingproductimage img {
     max-height: 300px;
@@ -1129,5 +1127,112 @@ main.productmain {
   .landingproductimage:hover .imagehover1 {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+/* our products page Caroline  */
+
+.ourproductsmain p,
+.ourproductsmain h2,
+.ourproductsmain h3,
+.ourproductsmain h4,
+.ourproductsmain h5,
+.ourproductsmain h6,
+.ourproductsmain p,
+.ourproductsmain a {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.ourproductsmain img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.ourproductsmain .heroimage {
+  height: 30vh;
+  grid-column: 1/-1;
+}
+
+.ourproductsmain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--grid-gap);
+}
+
+.ourproductsmain .shopby {
+  grid-column: 1/-1;
+}
+
+.ourproductsmain .shopby h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ourproductsmain .materialnav {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--grid-gap);
+}
+
+.ourproductsmain .materialnav h2 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.ourproductsmain .countrynav {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--grid-gap);
+}
+
+.ourproductsmain .countrynav h2 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.ourproductsmain .firstproductimage {
+  grid-column: 1/-1;
+}
+
+.ourproductsmain a:hover,
+a:focus {
+  background-color: black;
+  color: #fafaf7;
+}
+
+.ourproductsmain .productcard:hover .imagehover1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ourproductsmain .productcard:focus .imagehover1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ourproductsmain .productcard {
+  position: relative;
+}
+
+.ourproductsmain .imagehover1 {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .ourproductsmain {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .ourproductsmain .firstproductimage {
+    grid-column: 3 / -1;
+    grid-row: 5 / span 2;
+    order: 2;
   }
 }
