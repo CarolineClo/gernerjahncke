@@ -503,8 +503,72 @@ p {
 }
 /* product page- Caroline Mobil view  */
 
-.productmain .otherviews {
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 1rem;
+}
+/* carousel mobile view */
+.productmain .carousel {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.productmain .slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.productmain .slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0;
+}
+
+.productmain .slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.productmain .carousel-button {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(250, 250, 247, 0.5);
+  padding: 0 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.productmain button.prev {
+  left: 1rem;
+}
+
+.productmain button.next {
+  right: 1rem;
+}
+
+.productmain .deskviewimages {
   display: none;
+}
+
+.productmain .caresendpriceadd {
+  gap: 1px;
+  display: flex;
+  flex-direction: column;
 }
 
 .blackbackground {
@@ -556,18 +620,71 @@ main.productmain {
 }
 
 @media screen and (min-width: 500px) {
-  main.productmain {
-    background-color: red;
+  .productmain .deskviewimages {
+    background-color: var(--clr-sec);
+    display: grid;
+    gap: var(--grid-gap);
+    grid-template-columns: 25% 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
-  .productmain .otherviews {
-    display: flex;
-    flex-direction: column;
+  .productmain .mainproduct {
+    grid-row: 1/4;
+    grid-column: 2;
+  }
+
+  .productmain .deskviewimages img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .productmain .mobileslide {
+    display: none;
   }
 }
 
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 768px) {
   main.productmain {
-    background-color: blue;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+  }
+
+  .productmain .deskviewimages {
+    grid-column: 1 / 2;
+    grid-row: 1/ 3;
+  }
+
+  .productmain .productinfo {
+    grid-column: 3/-1;
+  }
+
+  .productmain .morefrom {
+    grid-column: 1/-1;
+  }
+
+  .productmain .moreproducts {
+    grid-column: 1/-1;
+  }
+
+  .productmain .morefrom h2 {
+    font-size: 3vw;
+    text-align: left;
+  }
+
+  .productmain h2 {
+    font-size: 6vw;
+  }
+  .productmain .moreproducts {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .productmain .moreproducts img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 

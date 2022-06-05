@@ -7,17 +7,49 @@
     <title>Product View</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="productbody">
     <header></header>
     <main class="productmain">
-      <div class="otherviews">
-        <div class="container">
-          <img
-            class="otherview"
-            src="images/flask2.webp"
-            alt="A gerner Jahncke flask on it's side"
-          />
+      <section class="mobileslide" aria-label="Product Images">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">
+            &lt;
+          </button>
+          <button class="carousel-button next" data-carousel-button="next">
+            &gt;
+          </button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img
+                class="container"
+                src="images/flask1.webp"
+                alt="A Gerner Jahncke flask"
+              />
+            </li>
+            <li class="slide">
+              <img
+                class="container"
+                src="images/flask2.webp"
+                alt="A gerner Jahncke flask on it's side"
+              />
+            </li>
+            <li class="slide">
+              <img
+                class="container"
+                src="Images/flaskmacro.webp"
+                alt="A close up photo pf a gerner Jahncke flask"
+              />
+            </li>
+            <li class="slide">
+              <img
+                src="Images/flasksitu.webp"
+                alt="someone holding two Gerner Jahncke flasks"
+              />
+            </li>
+          </ul>
         </div>
+      </section>
+      <div class="deskviewimages">
         <div class="container">
           <img
             class="otherview"
@@ -28,20 +60,27 @@
         <div class="container">
           <img
             class="otherview"
-            src="images/flasksitu.webp"
-            alt="someone holding two Gerner Jahncke flasks"
+            src="images/flask2.webp"
+            alt="A gerner Jahncke flask on it's side"
           />
         </div>
+          <div class="container mainproduct">
+            <img
+              class="firstproduct"
+              src="images/flask1.webp"
+              alt="A Gerner Jahncke flask"
+            />
+          </div>
+          
+          <div class="container">
+            <img
+              class="otherview"
+              src="images/flasksitu.webp"
+              alt="someone holding two Gerner Jahncke flasks"
+            />
+          </div>
+        </div>
       </div>
-
-      <div class="container">
-        <img
-          class="firstproduct"
-          src="images/flask1.webp"
-          alt="A Gerner Jahncke flask"
-        />
-      </div>
-
       <div class="container">
         <section class="productinfo">
           <h2>Reykjavik Soil Flask</h2>
@@ -54,6 +93,7 @@
           <p>10cm x 20cm</p>
         </section>
       </div>
+      <section class="caresendpriceadd">
       <div class="container">
         <h6 class="care">Care Instructions</h6>
       </div>
@@ -66,7 +106,8 @@
       <div class="basket">
         <h6>Add to basket</h6>
       </div>
-      <div class="container">
+    </section>
+      <div class="container morefrom">
         <h2 class="morecollection">More from the collection</h2>
       </div>
       <section class="blackbackground moreproducts">
@@ -85,5 +126,6 @@
       </section>
     </main>
     <footer></footer>
+    <script src="script.js"></script>
   </body>
 </html>
