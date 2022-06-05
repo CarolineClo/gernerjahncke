@@ -608,12 +608,12 @@ p {
 }
 /* product page- Caroline Mobil view  */
 
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+.productmain h2,
+.productmain h3,
+.productmain h4,
+.productmain h5,
+.productmain h6,
+.productmain p {
   margin: 1rem;
 }
 /* carousel mobile view */
@@ -950,16 +950,14 @@ h6 {
   }
 
   .welcomesection .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    align-content: center;
+    justify-content: center;
   }
 
   .welcomesection p,
   .welcomesection h2 {
-    max-width: 400px;
-    margin: auto;
-    align-content: center;
+    max-width: 500px;
   }
 
   .landingpagenav {
@@ -1007,10 +1005,15 @@ h6 {
     align-items: center;
   }
 
+  .gallokkensection p, .totayamasection p, .reykjaviksection p{
+    max-width: 500px;
+    margin: auto;
+  }
+
   .gallokkensection {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 0.7fr 2.5fr;
+    grid-template-rows: 0.7fr 1fr 2.3fr;
   }
 
   .gallokkensection .sectionsecondimg {
@@ -1021,19 +1024,13 @@ h6 {
 
   .landingmain p {
     display: grid;
-    align-content: center;
-    justify-content: center;
+   margin-left: 1rem;
   }
 
-  .totayamasection p,
-  .reykjaviksection p,
-  .gallokkensection p {
-    max-width: 400px;
-  }
+
 
   .landingproductimage img {
     max-height: 300px;
-    padding: 2rem;
   }
 
   .landingproductimage {
@@ -1055,7 +1052,7 @@ h6 {
     color: var(--clr-sec);
     visibility: hidden;
     opacity: 0;
-    padding: 4rem;
+    padding: 3rem;
 
     /* transition effect. not necessary */
     transition: opacity 0.2s, visibility 0.2s;
