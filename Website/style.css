@@ -42,9 +42,7 @@ body {
   max-width: 100vw;
   display: flex;
   z-index: 50;
-  justify-content: space-between;
-  padding: 0% 5% 0% 0%;
-}
+  justify-content: space-between;}
 
 #headerTitleDesktop {
   display: none;
@@ -67,6 +65,7 @@ body {
 .container {
   background-color: var(--clr-pri);
   width: 100%;
+  gap: 1px;
 }
 
 h2,
@@ -796,12 +795,14 @@ main.productmain {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1px;
+  background-color: #000;
 }
 
 .landinggrid2 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1px;
+  background-color: #000;
 }
 .navimg {
   background-image: url("Images/flasksitu.webp");
@@ -944,17 +945,18 @@ main.productmain {
     justify-content: center;
     align-content: center;
     gap: 1px;
+    background-color: #000;
   }
 
-  .welcomesection .container {
+  .welcome1 {
     display: grid;
-    align-content: center;
-    justify-content: center;
+    gap: 1px;
+    grid-template-rows: auto;
   }
 
   .welcomesection p,
   .welcomesection h2 {
-    max-width: 500px;
+    max-width: 450px;
   }
 
   .landingpagenav {
