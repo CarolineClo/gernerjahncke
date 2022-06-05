@@ -22,7 +22,7 @@
 
   /* Lexia Mono Font-Sizes */
   --l-bold: 700;
-  --ff-logo: 
+
   --grid-gap: 1px;
 }
 
@@ -672,8 +672,7 @@ p {
 
 .productmain .caresendpriceadd {
   gap: 1px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
 }
 
 .blackbackground {
@@ -826,12 +825,12 @@ main.productmain {
   width: 100%;
 }
 
-p,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.landingmain p,
+.landingmain h2,
+.landingmain h3,
+.landingmain h4,
+.landingmain h5,
+.landingmain h6 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
