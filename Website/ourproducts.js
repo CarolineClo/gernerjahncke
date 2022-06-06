@@ -1,52 +1,16 @@
-//const urlParams = new URLSearchParams(window.location.search);
-//const id = urlParams.get("product");
-
-
-//let url="http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/product/";
-
 //if (collection) {
   //  url += `?q={"Collection": "${collection}"}`;
 
   window.addEventListener("load", setup);
   const endpoint = "http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/";
 function setup(){
-    getMaterials();
-    getCategories();
-    getDenmark();
-
-   
-    
+    //getMaterials();
+    //getCategories();
+    //getDenmark();
 }
 
-//console.log(url);
 
-//fetch(url)
-//.then((res) => res.json())
-//.then((data) => showProduct(data));
-
-//populating the product page
-
-/*function showProducts(products) {
-    products.forEach((product) => {
-        console.log(product);
-        const template_material = document.querySelector("#material_button").content;
-        const template_collection = document.querySelector("#collection_button").content;
-        const clone_material = template.cloneNode(true);
-        const clone_collection = template.cloneNode(true);
-
-       /clone_material.querySelector(h2).textContent = product.product_name;
-        clone_collection.querySelector(h2).textContent = category.name;
-    
-        const parent = document.querySelector("main");
-
-        parent.appendChild(clone_collection);
-    });
-
-}
-
-*/
-
-function getCategories() {
+/*function getCategories() {
     fetch(endpoint + "categories?parent=5")
     .then(res => res.json())
     .then(setupCategories);
@@ -79,6 +43,7 @@ matArray.forEach(mat => {
     parentElement.appendChild(copy);
 });
 }
+*/
 
 function getDenmark() {
 fetch(endpoint + "product?categories=6&_embed")
@@ -137,5 +102,14 @@ function setupDenmark(prodArray) {
                         parentElement.appendChild(copy);
                     });
                     }
+
+const denmark_button = document.querySelector("#denmark_button");
+denmark_button.addEventListener("click", getDenmark);
+
+const iceland_button = document.querySelector("#iceland_button");
+iceland_button.addEventListener("click", getIceland);
+
+const japan_button = getElementById("#japan_button");
+japan_button.addEventListener("click", getJapan);
 
             
