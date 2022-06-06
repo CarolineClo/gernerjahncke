@@ -534,7 +534,7 @@ p {
 
 .comissionheroimg {
   display: flex;
-  background-image: url("/Website/Images/furnaceCups.webp");
+  background-image: url("content/furnaceCups.webp");
   justify-content: center;
   background-position: 20%;
   background-size: cover;
@@ -560,7 +560,7 @@ p {
 }
 
  #comissionimg2 {
-   background-image: url("/Website/Images/sexyCup.webp");
+   background-image: url("content/sexyCup.webp");
    justify-content: center;
    background-position: center;
    background-size: cover;
@@ -577,14 +577,14 @@ p {
 }
 
 #formerWorkImg1 {
-  background-image: url("/Website/Images/foamWipe.webp");
+  background-image: url("content/foamWipe.webp");
   background-size: cover;
   background-position: center;
   height: 300px;
 }
  
 #formerWorkImg2 {
-  background-image: url("/Website/Images/glassesTable.webp");
+  background-image: url("content/glassesTable.webp");
   background-size: 100%;
   background-position: center;
   height: 300px;
@@ -1095,7 +1095,7 @@ display: none;
   .aboutussection1img {
 
     display: grid;
-    background-image: url("/Website/Images/GJHeadshot.webp");
+    background-image: url("/content/GJHeadshot.webp");
     background-position: center;
     background-size: cover;
     justify-content: center;
@@ -1116,14 +1116,14 @@ display: none;
   }
 
   #aboutuspicture1 {
-    background-image: url("/Website/Images/lauraHands.webp");
+    background-image: url("/content/lauraHands.webp");
     background-position: center;
     background-size: cover;
     height: 250px;
   }
 
   #aboutuspicture2 {
-    background-image: url("/Website/Images/colourPalette.webp");
+    background-image: url("/content/colourPalette.webp");
     background-position: center;
     background-size: cover;
     height: 250px;
@@ -1719,7 +1719,7 @@ main.productmain {
 
 .navimg {
 
-  background-image: url("/Website/Images/tableSitu.webp");
+  background-image: url("content/tableSitu.webp");
 
   min-height: 300px;
 
@@ -2190,7 +2190,7 @@ background-color: transparent;
 
   .welcome2 {
 
-    background-image: url("/Website/Images/family.webp");
+    background-image: url("content/family.webp");
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
@@ -2272,13 +2272,13 @@ background-color: transparent;
   }
 
     #firstMacro {
-      background-image: url("/Website/Images/totyamaFlaskMacro.webp");
+      background-image: url("content/totyamaFlaskMacro.webp");
       background-size: cover;
       background-position: 50%;
     }
 
     #secondMacro {
-      background-image: url("/Website/Images/gallokenFlaskMacro.webp");
+      background-image: url("content/gallokenFlaskMacro.webp");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -2286,7 +2286,7 @@ background-color: transparent;
     }
 
     #thirdMacro {
-      background-image: url("/Website/Images/icelandCupContext.webp");
+      background-image: url("content/icelandCupContext.webp");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -2541,7 +2541,7 @@ background-color: transparent;
 .ourproductsmain .heroimage {
 
   height: 50vh;
-  background-image: url("/Website/Images/macroJapCup.webp");
+  background-image: url("content/macroJapCup.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
