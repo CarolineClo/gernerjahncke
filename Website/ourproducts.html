@@ -34,6 +34,7 @@
         <div id="navLogo"><svg xmlns="http://www.w3.org/2000/svg" width="70%" viewBox="0 0 652.99 297.31"><g id="c"><text transform="translate(0 109.06)" font-family="HeroNew-SemiBold, &apos;Hero New&apos;" font-size="125"><tspan letter-spacing=".13em"><tspan x="0" y="0">GERNER </tspan></tspan><tspan x="0" y="150" letter-spacing="-.01em">J</tspan><tspan x="58.75" y="150" letter-spacing="0em">AHNCKE</tspan></text></g></svg>    
   
         </div>
+        </div>
   
         <div id="navProducts"><a href="">Our Products</a></div>
   
@@ -69,47 +70,42 @@
 
       <nav class="materialnav">
 
-        <template id="material"><a class="container ceramicbutton" href=""><h2>Ceramic</h2></a></template>
+        <template id="material_button">
+          <a class="container ceramicbutton" href=""><h2></h2></a>
+        </template>
 
- <!--
-          these a need to be deleted after the fetching is done and working
-        -->
 
-        <a class="container" href=""><h2>Glass</h2></a>
-
+          
       </nav>
 
       <nav class="countrynav">
 
-        <template id="country"><a class="container" href="ourproducts.html?collection="><h2>Denmark</h2></a></template>
+        <template id="collection_button">
+          <a class="container" href="ourproducts.html?collection="><h2>Denmark</h2></a>
+        </template>
 
-        <!--
-          these two a's need to be deleted after the fetching is done and working
-        -->
-
-        <a class="container" href=""><h2>Iceland</h2></a>
-
-        <a class="container" href=""><h2>Japan</h2></a>
 
       </nav>
 
- 
+  
 
-      <div class="container firstproductimage productcard">
+    <!--  <div class="container">
 
         <img src="/Website/Images/on_table_situ.webp" alt="A Gerner Jahncke Cup" />
 
       </div>
+-->
 
+      <template id="product_card">
       <div class="container productcard">
 
-        <img src="Images/flaskdots.webp" alt="A Gerner Jahncke flask" />
+        <img src="" alt="A Gerner Jahncke flask" />
 
  
 
         <div class="imagehover">
 
-          <h2>Totayama Soil Flask</h2>
+          <h2></h2>
 
           <p class="price">280</p>
 
@@ -118,8 +114,9 @@
         </div>
 
       </div>
+</template>
 
-      <div class="container productcard">
+    <!--  <div class="container productcard">
 
         <img src="Images/cupdots.webp" alt="A Gerner Jahncke Cup" />
 
@@ -173,18 +170,22 @@
 
       </div>
 
-        <a class="container" href=""><h2>Glass</h2></a>
+    -->
+
+        <!--<a class="container" href=""><h2>Glass</h2></a>
       </nav>
       <nav class="countrynav">
         <a class="container" href=""><h2>Denmark</h2></a>
         <a class="container" href=""><h2>Iceland</h2></a>
         <a class="container" href=""><h2>Japan</h2></a>
+      
       </nav>
+      -->
 
       <div class="container firstproductimage productcard">
         <img src="Images/on_table_situ.webp" alt="A Gerner Jahncke Cup" />
       </div>
-      <div class="container productcard">
+    <!--  <div class="container productcard">
         <img src="Images/flaskdots.webp" alt="A Gerner Jahncke flask" />
 
         <div class="imagehover1">
@@ -220,6 +221,7 @@
           <a href="">Learn more</a>
         </div>
       </div>
+      -->
     </main>
 
     <footer>
@@ -292,7 +294,7 @@
   
       <a href="https://www.homofaber.com/en/discover/artisans-gerner-rick#" target="_blank">
   
-      <img src="/Website/Images/hfg sticker186x186.png" alt="Homo Faber logo" id="homofaber">
+      <img src="/Website/Images/hfg_sticker186x186.png" alt="Homo Faber logo" id="homofaber">
   
       </a>
   
@@ -315,6 +317,7 @@
     </div>
   
       </footer>
+      <script src="ourproducts.js"></script>
 
   </body>
 
