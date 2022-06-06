@@ -844,7 +844,7 @@ p {
 
 .aboutussectionmobileimg {
 
-  width: 100%;
+display: none;
 
 }
 
