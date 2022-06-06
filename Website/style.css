@@ -1676,7 +1676,7 @@ main.productmain {
 
 .navimg {
 
-  background-image: url("Images/flasksitu.webp");
+  background-image: url("/Website/Images/tableSitu.webp");
 
   min-height: 300px;
 
@@ -1937,7 +1937,7 @@ main.productmain {
 
   .navimg {
 
-    min-height: 120vh;
+    min-height: 86vh;
 
   }
 
@@ -2112,6 +2112,13 @@ background-color: transparent;
 
   }
 
+  .welcome2 {
+
+    background-image: url("/Website/Images/family.webp");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+  }
  
 
   .welcomesection p,
@@ -2188,7 +2195,27 @@ background-color: transparent;
 
   }
 
- 
+    #firstMacro {
+      background-image: url("/Website/Images/totyamaFlaskMacro.webp");
+      background-size: cover;
+      background-position: 50%;
+    }
+
+    #secondMacro {
+      background-image: url("/Website/Images/gallokenFlaskMacro.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+
+    #thirdMacro {
+      background-image: url("/Website/Images/icelandCupContext.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
 
   .totayamasection .sectionsecondimg,
 
