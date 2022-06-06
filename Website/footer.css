@@ -55,6 +55,7 @@ width: 4rem;
 
 #social_media {
   display: none;
+
 }
 
 #second_container_footer {
@@ -92,6 +93,7 @@ footer a {
 .social_media_icon {
   width: 50%;
   height: auto;
+  filter: grayscale();
 }
 
 #social_media_section {

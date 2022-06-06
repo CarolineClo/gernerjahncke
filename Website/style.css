@@ -1808,15 +1808,11 @@ main.productmain {
 
 }
 
- 
-
 .landingpagenav {
 
   display: none;
 
 }
-
- 
 
 .sectionsecondimg {
 
@@ -1824,15 +1820,12 @@ main.productmain {
 
 }
 
- 
-
 .totayamasection img {
 
   width: 100%;
 
 }
 
- 
 
 .gallokkensection img {
 
@@ -1840,7 +1833,6 @@ main.productmain {
 
 }
 
- 
 
 .reykjaviksection img {
 
@@ -2029,9 +2021,11 @@ main.productmain {
 
     grid-template-rows: 1fr 1fr;
 
-    width: 100%;
+    width: 90%;
 
     height: 100%;
+
+    margin: auto;
 
   }
 
@@ -2049,17 +2043,17 @@ main.productmain {
 
     text-align: center;
 
-    padding: 14px 16px;
+    padding: 5% ;
 
     text-decoration: none;
 
-    font-size: 3rem;
+    font-size: 2rem;
 
     display: grid;
 
     align-content: center;
 
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 
     font-weight: var(--l-bold);
 
@@ -2144,7 +2138,7 @@ background-color: transparent;
 
   }
 
- 
+
 
   .welcomesection {
 
@@ -2531,7 +2525,10 @@ background-color: transparent;
 .ourproductsmain .heroimage {
 
   height: 50vh;
-
+  background-image: url("/Website/Images/macroJapCup.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-column: 1/-1;
 
 }
@@ -2629,7 +2626,7 @@ background-color: transparent;
 a:focus {
 
   background-color: black;
-
+  fill: var(--clr-pri);
   color: #fafaf7;
 
 }
