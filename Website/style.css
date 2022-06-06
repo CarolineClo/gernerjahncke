@@ -96,10 +96,9 @@ body {
   height: 20%;
 }
 
- 
+
 
 #underHeader {
-
   display: none;
 
 }
@@ -108,6 +107,21 @@ body {
   padding-right: 5%;
 }
   
+#dropDown {
+  display: none;
+  z-index: 40;
+  position: fixed;
+  right: 0;
+  top: 8.5%;
+  background-color: #fafaf7;
+  height: 300px;
+  width: 50%;
+ }
+
+ .dropItem {
+   border: #000 1px solid;
+   padding: 2%;
+ }
 
 /* HEADER END */
 
@@ -303,12 +317,12 @@ p {
  
 
   #hamburger {
-
     display: none;
-
   }
 
- 
+  #dropDown {
+   display: none;
+  }
 
   .header {
 
@@ -524,6 +538,7 @@ p {
   justify-content: center;
   background-position: 20%;
   background-size: cover;
+  height: 40vh;
 }
 
  
@@ -609,7 +624,7 @@ p {
 
   .comissionheroimg {
 
-    height: 70vh;
+
 
   }
 
@@ -902,7 +917,6 @@ p {
 .aboutussection2 {
 
   display: grid;
-
   grid-template-rows: 1fr 1fr;
 
 }
@@ -1066,7 +1080,9 @@ p {
 
     display: grid;
 
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 400px;
 
     grid-template-rows: none;
 
@@ -1122,7 +1138,7 @@ p {
 
     display: grid;
 
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
     grid-template-rows: none;
 
