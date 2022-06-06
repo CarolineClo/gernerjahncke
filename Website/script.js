@@ -17,34 +17,20 @@ buttons.forEach((button) => {
   });
 });
 
-window.addEventListener("load", setup);
-const endpoint = "http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/";
+
+
+
+/*window.addEventListener("load", setup);
 function setup() {
   getCategories();
 }
-
-const url="http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/product/65";
-
-/*fetching
-
-fetch(url)
-.then((res) => res.json())
-.then((data) => showProduct(data));
-
-//populating
-
-function showProduct(product) {
-
-}
-
-*/
 
 function getCategories() {
 fetch(endpoint + "categories?parent=5")
 .then(res => res.json())
 .then(setupCategories);
 }
-
+*/
 
 //function setupCategories(catArray)
 //const template = document.querySelector(template#categorytemplate).textContent;
@@ -81,11 +67,16 @@ Reykjavik collection (just the name/ no products included) - http://michalinaoni
 Reykjavik Collection (products) - http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/product?categories=8
 Glass collection (just the name/ no products included) - http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/categories/13
 Glass (products) - http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/product?categories=13
-
+http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/product?categories=13&_fields=product_name
 
 Glass material (just the name/ no products included) - http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/categories/12
 Glass (products) - http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/product?categories=12
 
 Ceramic material (just the name/ no products included) - http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/categories/11
 Ceramic (products) - http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/product?categories=11
+
+
+
 */
+
+//document.querySelector(img.container mainproduct).src = endpoint + "product/65.webp"
