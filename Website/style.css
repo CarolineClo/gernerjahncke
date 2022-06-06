@@ -1,18 +1,6 @@
 @import url("https://use.typekit.net/ajq5bje.css");
 
- 
 
-#spacerDeleteMe {
-
-  height: 2000px;
-
-  display: block;
-
-  width: 400px;
-
-}
-
- 
 
 :root {
 
@@ -57,7 +45,7 @@
 * {
 
   margin: 0;
-
+  scroll-behavior: smooth;
   padding: 0;
 
 }
@@ -73,7 +61,9 @@ body {
   overflow-x: hidden;
 }
 
- 
+.link:hover {
+  cursor: pointer;
+}
 
 /* HEADER START */
 
@@ -221,7 +211,9 @@ p {
 
 }
 
- 
+ #homeLogo:hover {
+  cursor: pointer;
+}
 
 /*CONTACTPAGE*/
 
@@ -527,11 +519,11 @@ p {
  
 
 .comissionheroimg {
-
   display: flex;
-
+  background-image: url("/Website/Images/furnaceCups.webp");
   justify-content: center;
-
+  background-position: 20%;
+  background-size: cover;
 }
 
  
@@ -552,7 +544,14 @@ p {
 
 }
 
- 
+ #comissionimg2 {
+   background-image: url("/Website/Images/sexyCup.webp");
+   justify-content: center;
+   background-position: center;
+   background-size: cover;
+   height: 350px;
+
+ }
 
 .formerworksection img {
 
@@ -562,7 +561,19 @@ p {
 
 }
 
+#formerWorkImg1 {
+  background-image: url("/Website/Images/foamWipe.webp");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
  
+#formerWorkImg2 {
+  background-image: url("/Website/Images/glassesTable.webp");
+  background-size: 100%;
+  background-position: center;
+  height: 300px;
+}
 
 .formerworksection .container:last-of-type {
 
@@ -598,7 +609,7 @@ p {
 
   .comissionheroimg {
 
-    height: 80vh;
+    height: 70vh;
 
   }
 
@@ -816,7 +827,7 @@ p {
 
  
 
-.aboutussectionmobileimg img {
+.aboutussectionmobileimg {
 
   width: 100%;
 
@@ -1068,7 +1079,9 @@ p {
   .aboutussection1img {
 
     display: grid;
-
+    background-image: url("/Website/Images/GJHeadshot.webp");
+    background-position: center;
+    background-size: cover;
     justify-content: center;
 
   }
@@ -1084,6 +1097,20 @@ p {
 
     padding: 2rem;
 
+  }
+
+  #aboutuspicture1 {
+    background-image: url("/Website/Images/lauraHands.webp");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+  }
+
+  #aboutuspicture2 {
+    background-image: url("/Website/Images/colourPalette.webp");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
   }
 
   .aboutussection2 > .container > p {
@@ -1676,7 +1703,7 @@ main.productmain {
 
 .navimg {
 
-  background-image: url("Images/flasksitu.webp");
+  background-image: url("/Website/Images/tableSitu.webp");
 
   min-height: 300px;
 
@@ -1710,7 +1737,42 @@ main.productmain {
 
 }
 
- 
+/* anchor positioning ////////////////////////// */
+
+#totayama {
+  position: relative;
+  top: -177px;
+}
+
+#gallokken {
+  position: relative;
+  top: -120px;
+}
+
+#aboutus {
+  position: relative;
+  top: -187px;
+}
+
+#ourProcessAnchor {
+  position: relative;
+  top: -183px;
+}
+
+#featuredwork {
+  position: relative;
+  top: -188px;
+}
+
+#comission {
+  position: relative;
+  top: -178px;
+}
+
+#formerWork {
+  position: relative;
+  top: -120px;
+}
 
 .landingmain p,
 
@@ -1746,15 +1808,11 @@ main.productmain {
 
 }
 
- 
-
 .landingpagenav {
 
   display: none;
 
 }
-
- 
 
 .sectionsecondimg {
 
@@ -1762,15 +1820,12 @@ main.productmain {
 
 }
 
- 
-
 .totayamasection img {
 
   width: 100%;
 
 }
 
- 
 
 .gallokkensection img {
 
@@ -1778,7 +1833,6 @@ main.productmain {
 
 }
 
- 
 
 .reykjaviksection img {
 
@@ -1937,7 +1991,7 @@ main.productmain {
 
   .navimg {
 
-    min-height: 120vh;
+    min-height: 86vh;
 
   }
 
@@ -1967,9 +2021,11 @@ main.productmain {
 
     grid-template-rows: 1fr 1fr;
 
-    width: 100%;
+    width: 90%;
 
     height: 100%;
+
+    margin: auto;
 
   }
 
@@ -1987,17 +2043,17 @@ main.productmain {
 
     text-align: center;
 
-    padding: 14px 16px;
+    padding: 5% ;
 
     text-decoration: none;
 
-    font-size: 3rem;
+    font-size: 2rem;
 
     display: grid;
 
     align-content: center;
 
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 
     font-weight: var(--l-bold);
 
@@ -2082,7 +2138,7 @@ background-color: transparent;
 
   }
 
- 
+
 
   .welcomesection {
 
@@ -2098,6 +2154,8 @@ background-color: transparent;
 
     background-color: #000;
 
+    height: 400px;
+
   }
 
  
@@ -2108,10 +2166,19 @@ background-color: transparent;
 
     gap: 1px;
 
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 3fr;
+
+    height: 400px;
 
   }
 
+  .welcome2 {
+
+    background-image: url("/Website/Images/family.webp");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+  }
  
 
   .welcomesection p,
@@ -2188,7 +2255,27 @@ background-color: transparent;
 
   }
 
- 
+    #firstMacro {
+      background-image: url("/Website/Images/totyamaFlaskMacro.webp");
+      background-size: cover;
+      background-position: 50%;
+    }
+
+    #secondMacro {
+      background-image: url("/Website/Images/gallokenFlaskMacro.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+
+    #thirdMacro {
+      background-image: url("/Website/Images/icelandCupContext.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
 
   .totayamasection .sectionsecondimg,
 
@@ -2438,7 +2525,10 @@ background-color: transparent;
 .ourproductsmain .heroimage {
 
   height: 50vh;
-
+  background-image: url("/Website/Images/macroJapCup.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-column: 1/-1;
 
 }
@@ -2537,7 +2627,7 @@ background-color: transparent;
 a:focus {
 
   background-color: black;
-
+  fill: var(--clr-pri);
   color: #fafaf7;
 
 }
@@ -2580,6 +2670,7 @@ a:focus {
     order: 2;
 
   }
+
 
 }
 
