@@ -69,7 +69,8 @@ body {
   background-color: var(--clr-sec);
 
   max-width: 100vw;
-
+  
+  overflow-x: hidden;
 }
 
  
@@ -86,9 +87,10 @@ body {
 
   z-index: 50;
 
-  justify-content: space-between;}
+  justify-content: space-between;
+  
+}
 
- 
 
 #headerTitleDesktop {
 
@@ -96,12 +98,12 @@ body {
 
 }
 
- 
 
 #headerTitleMobile {
 
   padding: 3% 0% 1% 3%;
-
+  width: 20%;
+  height: 20%;
 }
 
  
@@ -112,15 +114,10 @@ body {
 
 }
 
- 
-
-#hamburger:hover {
-
-  cursor: pointer;
-
+#hamburger {
+  padding-right: 5%;
 }
-
- 
+  
 
 /* HEADER END */
 
@@ -238,6 +235,7 @@ p {
 
   gap: 1px;
 
+  min-height: 87vh;
 }
 
  
@@ -258,15 +256,15 @@ p {
 
   order: -1;
 
+  padding: 0;
 }
 
  
 
 .contactimg img {
 
-  width: 80%;
-
-  padding: 0rem;
+  width: 60%;
+  padding: 10%;
 
 }
 
@@ -322,7 +320,7 @@ p {
 
   .header {
 
-    position: absolute;
+    position: relative;
 
     width: 100%;
 
@@ -756,18 +754,6 @@ p {
 
  
 
-.processvideosection .container {
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-}
-
- 
-
 .processvideosection img {
 
   max-width: 80%;
@@ -1034,7 +1020,7 @@ p {
 
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
 
     grid-template-rows: 1fr;
 
@@ -1052,7 +1038,10 @@ p {
 
   }
 
- 
+  #videocontainer {
+    display: flex;
+    align-items: center;
+  }
 
   .aboutussectionmobileimg {
 
@@ -1084,6 +1073,9 @@ p {
 
   }
 
+  .aboutussection1 > .container > p {
+    max-width: 60%;
+  }
  
 
   .aboutussection1img img {
@@ -1094,6 +1086,9 @@ p {
 
   }
 
+  .aboutussection2 > .container > p {
+    max-width: 60%;
+  }
  
 
   .aboutussection2 {
@@ -1170,7 +1165,7 @@ p {
 
     display: grid;
 
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
 
     grid-template-rows: none;
 
@@ -1178,23 +1173,29 @@ p {
 
   }
 
+  .ourprocessessection1 > .container > p {
+    max-width: 60%;
+  }
  
 
   .ourprocessessection1 img {
 
     max-width: 200px;
-
     padding: 2rem;
+    display: grid;
+    justify-content: center;
 
   }
 
- 
+  .ourprocessessection2 > .container > p {
+    max-width: 60%;
+  }
 
   .ourprocessessection2 {
 
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
 
     grid-template-rows: none;
 
@@ -1207,7 +1208,6 @@ p {
   .ourprocessessectionimg {
 
     display: grid;
-
     justify-content: center;
 
   }
@@ -1400,6 +1400,10 @@ p {
 
   display: grid;
 
+}
+
+.caresendpriceadd>div:hover {
+  cursor: pointer;
 }
 
  
@@ -2500,7 +2504,7 @@ main.productmain {
 
 .ourproductsmain .heroimage {
 
-  height: 30vh;
+  height: 50vh;
 
   grid-column: 1/-1;
 
