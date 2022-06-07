@@ -1,0 +1,35 @@
+window.addEventListener("load", setup);
+const endpoint = "http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/";
+function setup() {
+  //getMaterials();
+  //getCategories();
+  //getDenmark();
+  getIceland();
+  //getJapan();
+}
+
+//let iceland_button = document.querySelector("#iceland_button");
+//iceland_button.addEventListener("click", getIceland);
+
+function getIceland() {
+  fetch(endpoint + "product?categories=8&_embed")
+    .then((res) => res.json())
+    .then(setupIceland);
+}
+
+function setupIceland(iceArray) {
+  console.log(iceArray);
+  const template = document.querySelector("template#product_card").content;
+  const parentElement = document.querySelector("main");
+  iceArray.forEach((prod) => {
+    const copy = template.cloneNode(true);
+    copy.querySelector("img").src =
+      prod._embedded["wp:featuredmedia"][0].source_url;
+    copy.querySelector("h2").textContent = prod.product_name;
+    copy.querySelector("p.price").textContent = prod.price;
+    copy
+      .querySelector("a")
+      .setAttribute("href", `productpage.html?id=${prod.id}`);
+    parentElement.appendChild(copy);
+  });
+}
