@@ -1,63 +1,34 @@
 @import url("https://use.typekit.net/ajq5bje.css");
 
-
-
 :root {
-
   --clr-pri: #fafaf7;
-
   --clr-sec: #000;
-
   --clr-ter: #fad3e1;
 
- 
-
   --ff-header: hero-new, sans-serif;
-
   --ff-heading: lexia-mono, serif;
-
   --ff-main: hero-new, sans-serif;
 
- 
-
-  /* Hero New Font-Sizes */
+  /* Hero New Font-weights */
 
   --h-semibold: 600;
-
   --h-light: 300;
-
   --h-ultralight: 200;
 
- 
-
   /* Lexia Mono Font-Sizes */
-
   --l-bold: 700;
-
- 
-
   --grid-gap: 1px;
-
 }
 
- 
-
 * {
-
   margin: 0;
   scroll-behavior: smooth;
   padding: 0;
-
 }
 
- 
-
 body {
-
   background-color: var(--clr-sec);
-
   max-width: 100vw;
-  
   overflow-x: hidden;
 }
 
@@ -68,45 +39,29 @@ body {
 /* HEADER START */
 
 .header {
-
   background-color: var(--clr-pri);
-
   max-width: 100vw;
-
-  display: flex;
-
   z-index: 50;
-
-  justify-content: space-between;
-  
 }
-
 
 #headerTitleDesktop {
-
   display: none;
-
 }
 
-
 #headerTitleMobile {
-
   padding: 3% 0% 1% 3%;
   width: 20%;
   height: 20%;
 }
 
-
-
 #underHeader {
   display: none;
-
 }
 
 #hamburger {
   padding-right: 5%;
 }
-  
+
 #dropDown {
   display: none;
   z-index: 40;
@@ -116,236 +71,138 @@ body {
   background-color: #fafaf7;
   height: 300px;
   width: 50%;
- }
+}
 
- .dropItem {
-   border: #000 1px solid;
-   padding: 2%;
- }
+.dropItem {
+  border: #000 1px solid;
+  padding: 2%;
+}
 
 /* HEADER END */
 
- 
-
 .container {
-
   background-color: var(--clr-pri);
-
   width: 100%;
-
   gap: 1px;
-
 }
-
- 
 
 h2,
-
 h3 {
-
   font-family: var(--ff-heading);
-
   font-weight: var(--l-bold);
-
 }
-
- 
 
 h1 {
-
   font-family: var(--ff-logo);
-
   font-weight: var(--h-semibold);
-
 }
-
- 
 
 p,
-
 a {
-
   font-family: var(--ff-main);
-
   font-weight: var(--h-light);
-
   margin: 0;
-
 }
-
- 
 
 a {
-
   text-decoration: none;
-
   color: inherit;
-
 }
-
- 
 
 h6 {
-
   font-family: var(--ff-main);
-
   font-weight: var(--h-light);
-
 }
-
- 
 
 h4,
-
 h5 {
-
   font-family: var(--ff-main);
-
   font-weight: var(--h-ultralight);
-
 }
-
- 
 
 h2,
-
 h3,
-
 h4,
-
 h5,
-
 h6,
-
 p {
-
   margin-left: 1rem;
-
   margin-right: 1rem;
-
 }
 
- #homeLogo:hover {
+#homeLogo:hover {
   cursor: pointer;
 }
 
 /*CONTACTPAGE*/
 
- 
-
 .contactmain {
-
   display: flex;
-
   flex-direction: column;
-
   gap: 1px;
-
   min-height: 87vh;
 }
 
- 
-
 .contactgrid {
-
   display: flex;
-
   flex-direction: column;
-
   gap: 1px;
-
 }
 
- 
-
 .contactimg {
-
   order: -1;
 
   padding: 0;
 }
 
- 
-
 .contactimg img {
-
   width: 60%;
   padding: 10%;
-
 }
-
- 
 
 .contactair {
-
   display: none;
-
 }
 
- 
-
 .contactmain p,
-
 .contactmain h2,
-
 .contactmain h3,
-
 .contactmain h4,
-
 .contactmain h5,
-
 .contactmain h6 {
-
   padding-top: 1rem;
 
   padding-bottom: 1rem;
-
 }
 
- 
-
 @media screen and (min-width: 600px) {
-
   /* Header Stuff STARTS ///////////////////////////////////////// */
 
   #headerTitleMobile {
-
     display: none;
-
   }
-
- 
 
   #hamburger {
     display: none;
   }
 
   #dropDown {
-   display: none;
+    display: none;
   }
 
   .header {
-
     position: relative;
 
     width: 100%;
 
     height: 120px;
-
   }
-
- 
 
   #navLogo > svg {
-
     padding-left: 17%;
-
   }
 
- 
-
   #underHeader {
-
     display: grid;
 
     grid-template-columns: repeat(6, 1fr);
@@ -365,13 +222,9 @@ p {
     top: 0;
 
     border-bottom: 1px solid black;
-
   }
 
- 
-
   #underHeader > div {
-
     background-color: #fafaf7;
 
     max-height: 100%;
@@ -381,33 +234,21 @@ p {
     justify-items: center;
 
     padding: 10px;
-
   }
 
- 
-
   #underHeader > div > a {
-
     display: block;
 
     margin: auto;
 
     text-align: center;
-
   }
-
- 
 
   #navlogo:hover {
-
     cursor: pointer;
-
   }
 
- 
-
   #headerTitleDesktop {
-
     font-family: var(--ff-header);
 
     font-size: 3.5rem;
@@ -419,17 +260,11 @@ p {
     text-align: center;
 
     padding: 2% 0% 2% 0%;
-
   }
-
- 
 
   /* Header Stuff ENDS ///////////////////////////////////////// */
 
- 
-
   .contactmain {
-
     display: grid;
 
     grid-template-columns: 1fr 2fr;
@@ -437,236 +272,157 @@ p {
     grid-template-rows: 0.4fr 3fr;
 
     gap: 1px;
-
   }
 
- 
-
   .contactgrid {
-
     display: flex;
 
     flex-direction: row;
 
     gap: 1px;
-
   }
 
- 
-
   .contactimg {
-
     order: 0;
 
     display: flex;
 
     align-items: center;
-
   }
-
- 
 
   .contactair {
-
     display: block;
-
   }
-
 }
-
- 
 
 /*COMISSION PAGE*/
 
 .comissionmain {
-
   display: flex;
 
   flex-direction: column;
 
   gap: 1px;
-
 }
-
- 
 
 .formerworkgrid {
-
   display: flex;
 
   flex-direction: column;
 
   gap: 1px;
-
 }
 
- 
-
 .formerworksection {
-
   display: grid;
 
   grid-template-columns: 1fr 1fr;
-
 }
 
- 
-
 .formerworksection .container:nth-child(2) {
-
   display: grid;
 
   justify-content: center;
-
 }
 
- 
-
 .formerworksection .container:nth-child(2) {
-
   display: flex;
 
   align-items: center;
-
 }
-
- 
 
 .comissionheroimg {
   display: flex;
-  background-image: url("content/furnaceCups.webp");
+  background-image: url("../content/furnaceCups.webp");
   justify-content: center;
   background-position: 20%;
   background-size: cover;
   height: 40vh;
 }
 
- 
-
 .comissionheroimg img {
-
   width: 100%;
-
 }
-
- 
 
 .comissionnav,
-
 .comissionsecondimage {
-
   display: none;
-
 }
 
- #comissionimg2 {
-   background-image: url("content/sexyCup.webp");
-   justify-content: center;
-   background-position: center;
-   background-size: cover;
-   height: 350px;
-
- }
+#comissionimg2 {
+  background-image: url("../content/sexyCup.webp");
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+}
 
 .formerworksection img {
-
   max-width: 100px;
 
   min-width: 100px;
-
 }
 
 #formerWorkImg1 {
-  background-image: url("content/foamWipe.webp");
+  background-image: url("../content/foamWipe.webp");
   background-size: cover;
   background-position: center;
   height: 300px;
 }
- 
+
 #formerWorkImg2 {
-  background-image: url("content/glassesTable.webp");
-  background-size: 100%;
+  background-image: url("../content/glassesTable.webp");
+  background-size: cover;
   background-position: center;
   height: 300px;
 }
 
 .formerworksection .container:last-of-type {
-
   display: grid;
 
   align-content: center;
-
 }
 
- 
-
 .comissionmain p,
-
 .comissionmain h2,
-
 .comissionmain h3,
-
 .comissionmain h4,
-
 .comissionmain h5,
-
 .comissionmain h6 {
-
   padding-top: 1rem;
 
   padding-bottom: 1rem;
-
 }
 
- 
-
 @media screen and (min-width: 700px) {
- 
-
   .comissionnav,
-
   .comissionsecondimage {
-
     display: block;
-
   }
 
- 
-
   .comissionsecondimage {
-
     display: grid;
 
     justify-content: center;
-
   }
 
   .comissionsecondimage img {
-
     width: 100%;
 
     padding: 2rem;
 
     max-width: 200px;
-
   }
 
- 
-
   .comissionnav {
-
     display: grid;
 
     grid-template-columns: 1fr 1fr;
 
     gap: 1px;
-
   }
 
- 
-
   .comissionnav a {
-
     display: flex;
 
     justify-content: center;
@@ -682,139 +438,88 @@ p {
     padding-top: 1rem;
 
     padding-bottom: 1rem;
-
   }
 
- 
-
   .comissionnav a:hover {
-
     background-color: #000;
 
     color: var(--clr-pri);
-
   }
 
- 
-
   .comissionintrosection {
-
     display: grid;
 
     grid-template-columns: 1fr 2fr;
 
     gap: 1px;
-
   }
 
- 
-
   .formerworksection {
-
     grid-template-columns: 3fr 1.5fr;
 
     gap: 1px;
-
   }
 
- 
-
   .formerworksection img {
-
     max-width: 200px;
 
     padding-top: 1rem;
 
     padding-bottom: 1rem;
-
   }
 
- 
-
   .formerworksection .container:last-of-type {
-
     display: grid;
 
     align-content: center;
-
-  }}
-
- 
+  }
+}
 
 /*OUR PROCESS PAGE*/
 
 .ourprocessmain {
-
   display: flex;
 
   flex-direction: column;
 
   gap: 1px;
-
 }
 
- 
-
 .processvideosection {
-
   display: grid;
 
   grid-template-rows: 1fr auto;
-
 }
-
- 
 
 #myVideo {
-
   width: 100%;
-
 }
 
- 
-
 .processvideosection img {
-
   max-width: 80%;
 
   padding-top: 1rem;
-
 }
-
- 
 
 .processvideosection p {
-
   max-width: 60%;
-
 }
 
- 
-
 .ourprocessnav {
-
   display: grid;
 
   grid-template-rows: 1fr 1fr 1fr;
 
   gap: 1px;
-
 }
 
- 
-
 .ourprocessnav a:hover {
-
   background-color: #000;
 
   color: #fafaf7;
-
 }
 
- 
-
 .ourprocessnav a {
-
   display: flex;
 
   justify-content: center;
@@ -830,57 +535,35 @@ p {
   padding-top: 1rem;
 
   padding-bottom: 1rem;
-
 }
 
- 
-
 .aboutussectionmobileimg {
-
-display: none;
-
+  display: none;
 }
 
 .aboutussection1 {
-
   display: grid;
 
   grid-template-rows: 1fr;
-
 }
-
- 
 
 .aboutussection1img {
-
   display: none;
-
 }
-
- 
 
 .resumebutton {
-
   display: none;
-
 }
 
- 
-
 .resumebuttonmobile {
-
   background-color: var(--clr-sec);
 
   display: flex;
 
   justify-content: end;
-
 }
 
- 
-
 .resumebuttonmobile a {
-
   color: var(--clr-pri);
 
   text-decoration: none;
@@ -894,148 +577,88 @@ display: none;
   padding-top: 1rem;
 
   padding-bottom: 1rem;
-
 }
 
- 
-
 .resumebuttonmobile a:hover {
-
   background-color: var(--clr-pri);
 
   color: #000;
-
 }
 
 .aboutussection2 {
-
   display: grid;
   grid-template-rows: 1fr 1fr;
-
 }
 
- 
-
 .aboutussectiontwoimg {
-
   display: flex;
 
   align-items: center;
 
   justify-content: center;
-
 }
 
- 
-
 .aboutussectiontwoimg img {
-
   max-width: 300px;
 
   padding: 2rem;
-
 }
 
- 
-
 .ourprocessessection1 {
-
   display: grid;
 
   grid-template-rows: 1fr 1fr;
-
 }
-
- 
 
 .ourprocessessection1 img {
-
   width: 100%;
-
 }
 
- 
-
 .ourprocessessection2 {
-
   display: grid;
 
   grid-template-rows: 1fr;
-
 }
-
- 
 
 .ourprocessessectionimg {
-
   display: none;
-
 }
 
- 
-
 .featuredworksection {
-
   display: grid;
 
   grid-template-columns: 2fr 1.5fr;
-
 }
 
- 
-
 .featuredworksection img {
-
   width: 100%;
-
 }
 
- 
-
 .featuredworksection img {
-
   max-width: 100px;
 
   min-width: 100px;
-
 }
 
- 
-
 .featuredworksection .container:last-of-type {
-
   display: grid;
 
   align-content: center;
-
 }
 
- 
-
 .ourprocessmain p,
-
 .ourprocessmain h2,
-
 .ourprocessmain h3,
-
 .ourprocessmain h4,
-
 .ourprocessmain h5,
-
 .ourprocessmain h6 {
-
   padding-top: 1rem;
 
   padding-bottom: 1rem;
-
 }
 
- 
-
 @media screen and (min-width: 600px) {
-
   .processvideosection {
-
     display: grid;
 
     grid-template-columns: 2fr 1fr;
@@ -1043,17 +666,12 @@ display: none;
     grid-template-rows: 1fr;
 
     gap: 1px;
-
   }
 
- 
-
   .processvideosection img {
-
     max-width: 100%;
 
     padding-top: 0%;
-
   }
 
   #videocontainer {
@@ -1062,15 +680,10 @@ display: none;
   }
 
   .aboutussectionmobileimg {
-
     display: none;
-
   }
 
- 
-
   .aboutussection1 {
-
     display: grid;
 
     grid-template-columns: 1fr 1fr;
@@ -1080,43 +693,35 @@ display: none;
     grid-template-rows: none;
 
     gap: 1px;
-
   }
 
- 
-
   .aboutussection1img {
-
     display: grid;
-    background-image: url("content/GJHeadshot.webp");
+    background-image: url("../content/GJHeadshot.webp");
     background-position: center;
     background-size: cover;
     justify-content: center;
-
   }
 
   .aboutussection1 > .container > p {
     max-width: 60%;
   }
- 
 
   .aboutussection1img img {
-
     max-width: 200px;
 
     padding: 2rem;
-
   }
 
   #aboutuspicture1 {
-    background-image: url("content/lauraHands.webp");
+    background-image: url("../content/lauraHands.webp");
     background-position: center;
     background-size: cover;
     height: 250px;
   }
 
   #aboutuspicture2 {
-    background-image: url("content/colourPalette.webp");
+    background-image: url("../content/colourPalette.webp");
     background-position: center;
     background-size: cover;
     height: 250px;
@@ -1125,10 +730,8 @@ display: none;
   .aboutussection2 > .container > p {
     max-width: 60%;
   }
- 
 
   .aboutussection2 {
-
     display: grid;
 
     grid-template-columns: 1fr 1fr;
@@ -1136,49 +739,29 @@ display: none;
     grid-template-rows: none;
 
     gap: 1px;
-
   }
-
- 
 
   .aboutussectiontwoimg {
-
     order: 2;
-
   }
-
- 
 
   .aboutussectiontwoimg img {
-
     width: 100%;
-
   }
-
- 
 
   .resumebuttonmobile {
-
     display: none;
-
   }
 
- 
-
   .resumebutton {
-
     background-color: var(--clr-sec);
 
     display: flex;
 
     justify-content: end;
-
   }
 
- 
-
   .resumebutton a {
-
     color: var(--clr-pri);
 
     text-decoration: none;
@@ -1192,13 +775,9 @@ display: none;
     padding-top: 1rem;
 
     padding-bottom: 1rem;
-
   }
 
- 
-
   .ourprocessessection1 {
-
     display: grid;
 
     grid-template-columns: 1fr 2fr;
@@ -1206,21 +785,17 @@ display: none;
     grid-template-rows: none;
 
     gap: 1px;
-
   }
 
   .ourprocessessection1 > .container > p {
     max-width: 60%;
   }
- 
 
   .ourprocessessection1 img {
-
     max-width: 200px;
     padding: 2rem;
     display: grid;
     justify-content: center;
-
   }
 
   .ourprocessessection2 > .container > p {
@@ -1228,7 +803,6 @@ display: none;
   }
 
   .ourprocessessection2 {
-
     display: grid;
 
     grid-template-columns: 2fr 1fr;
@@ -1236,60 +810,36 @@ display: none;
     grid-template-rows: none;
 
     gap: 1px;
-
   }
-
- 
 
   .ourprocessessectionimg {
-
     display: grid;
     justify-content: center;
-
   }
-
- 
 
   .ourprocessessectionimg img {
-
     max-width: 200px;
 
     padding: 2rem;
-
   }
-
- 
 
   .featuredworksection {
-
     gap: 1px;
-
   }
 
- 
-
   .featuredworksection .container:last-of-type {
-
     display: grid;
 
     justify-content: center;
-
   }
 
- 
-
   .featuredworksection img {
-
     max-width: 200px;
 
     padding: 2rem;
-
   }
 
- 
-
   .ourprocessnav {
-
     display: grid;
 
     grid-template-columns: 1fr 1fr 1fr;
@@ -1297,47 +847,31 @@ display: none;
     grid-template-rows: none;
 
     gap: 1px;
-
   }
-
 }
 
 /* product page- Caroline Mobil view  */
 
- 
-
 .productmain h2,
-
 .productmain h3,
-
 .productmain h4,
-
 .productmain h5,
-
 .productmain h6,
-
 .productmain p {
-
   margin: 1rem;
-
 }
 
 /* carousel mobile view */
 
 .productmain .carousel {
-
   width: 100%;
 
   height: 80vh;
 
   position: relative;
-
 }
 
- 
-
 .productmain .slide {
-
   position: absolute;
 
   inset: 0;
@@ -1347,25 +881,17 @@ display: none;
   transition: 200ms opacity ease-in-out;
 
   transition-delay: 200ms;
-
 }
 
- 
-
 .productmain .slide[data-active] {
-
   opacity: 1;
 
   z-index: 1;
 
   transition-delay: 0s;
-
 }
 
- 
-
 .productmain .slide > img {
-
   display: block;
 
   width: 100%;
@@ -1375,13 +901,9 @@ display: none;
   object-fit: cover;
 
   object-position: center;
-
 }
 
- 
-
 .productmain .carousel-button {
-
   position: absolute;
 
   background: none;
@@ -1401,149 +923,88 @@ display: none;
   padding: 0 0.5rem;
 
   border-radius: 0.25rem;
-
 }
-
- 
 
 .productmain button.prev {
-
   left: 1rem;
-
 }
-
- 
 
 .productmain button.next {
-
   right: 1rem;
-
 }
-
- 
 
 .productmain .deskviewimages {
-
   display: none;
-
 }
 
- 
-
 .productmain .caresendpriceadd {
-
   gap: 1px;
 
   display: grid;
-
 }
 
-.caresendpriceadd>div:hover {
+.caresendpriceadd > div:hover {
   cursor: pointer;
 }
 
- 
-
 .blackbackground {
-
   background-color: var(--clr-sec);
-
 }
 
- 
-
 .productmain .moreproducts {
-
   display: grid;
 
   grid-template-columns: 1fr 1fr;
 
   gap: var(--grid-gap);
-
 }
 
- 
-
 main.productmain {
-
   display: flex;
 
   flex-direction: column;
 
   gap: var(--grid-gap);
-
 }
-
- 
 
 .productmain img {
-
   width: 100%;
-
 }
 
- 
-
 .productmain .productinfo {
-
   display: flex;
 
   flex-direction: column;
-
 }
 
- 
-
 .productmain h2 {
-
   font-size: 10vw;
 
   text-transform: uppercase;
-
 }
 
- 
-
 .productmain h2.morecollection {
-
   font-size: 6vw;
 
   text-align: center;
-
 }
 
- 
-
 .productmain h6 {
-
   font-size: 1.5rem;
 
   text-align: right;
-
 }
-
- 
 
 .productmain h6.price {
-
   font-weight: var(--h-semibold);
-
 }
-
- 
 
 .productmain .basket {
-
   color: var(--clr-pri);
-
 }
 
- 
-
 @media screen and (min-width: 500px) {
-
   .productmain .deskviewimages {
-
     background-color: var(--clr-sec);
 
     display: grid;
@@ -1553,21 +1014,15 @@ main.productmain {
     grid-template-columns: 25% 1fr;
 
     grid-template-rows: 1fr 1fr 1fr;
-
   }
 
   .productmain .mainproduct {
-
     grid-row: 1/4;
 
     grid-column: 2;
-
   }
 
- 
-
   .productmain .deskviewimages img {
-
     display: block;
 
     width: 100%;
@@ -1577,93 +1032,55 @@ main.productmain {
     object-fit: cover;
 
     object-position: center;
-
   }
 
   .productmain .mobileslide {
-
     display: none;
-
   }
-
 }
 
- 
-
 @media screen and (min-width: 768px) {
-
   /* product page on desktop */
 
   main.productmain {
-
     display: grid;
 
     grid-template-columns: 50% 1fr;
-
   }
 
- 
-
   .productmain .deskviewimages {
-
     grid-column: 1 / 2;
 
     grid-row: 1/ 3;
-
   }
-
- 
 
   .productmain .productinfo {
-
     grid-column: 3/-1;
-
   }
-
- 
 
   .productmain .morefrom {
-
     grid-column: 1/-1;
-
   }
-
- 
 
   .productmain .moreproducts {
-
     grid-column: 1/-1;
-
   }
 
- 
-
   .productmain .morefrom h2 {
-
     font-size: 3vw;
 
     text-align: left;
-
   }
 
- 
-
   .productmain h2 {
-
     font-size: 6vw;
-
   }
 
   .productmain .moreproducts {
-
     grid-template-columns: repeat(4, 1fr);
-
   }
 
- 
-
   .productmain .moreproducts img {
-
     display: block;
 
     width: 100%;
@@ -1673,33 +1090,19 @@ main.productmain {
     object-fit: cover;
 
     object-position: center;
-
   }
-
 }
-
- 
 
 /*LANDING PAGE */
 
- 
-
 .landingmain {
-
   display: grid;
-
   grid-template-columns: 1fr;
-
   gap: 1px;
-
   background-color: #000;
-
 }
 
- 
-
 .landinggrid2 {
-
   display: grid;
 
   grid-template-columns: 1fr;
@@ -1707,12 +1110,10 @@ main.productmain {
   gap: 1px;
 
   background-color: #000;
-
 }
 
 .navimg {
-
-  background-image: url("content/tableSitu.webp");
+  background-image: url("../content/tableSitu.webp");
 
   min-height: 300px;
 
@@ -1722,28 +1123,17 @@ main.productmain {
 
   background-size: cover;
 
- 
-
   /* Needed to position the navbar */
 
   position: relative;
-
 }
-
- 
 
 .navcontainer {
-
   display: none;
-
 }
 
- 
-
 .landingsecondimg img {
-
   display: none;
-
 }
 
 /* anchor positioning ////////////////////////// */
@@ -1784,104 +1174,65 @@ main.productmain {
 }
 
 .landingmain p,
-
 .landingmain h2,
-
 .landingmain h3,
-
 .landingmain h4,
-
 .landingmain h5,
-
 .landingmain h6 {
-
   padding-top: 1rem;
 
   padding-bottom: 1rem;
-
 }
 
- 
-
 .totayamasection,
-
 .reykjaviksection,
-
 .gallokkensection {
-
   display: grid;
 
   grid-template-columns: 1fr;
 
   gap: 1px;
-
 }
 
 .landingpagenav {
-
   display: none;
-
 }
 
 .sectionsecondimg {
-
   display: none;
-
 }
 
 .totayamasection img {
-
   width: 100%;
-
 }
-
 
 .gallokkensection img {
-
   width: 100%;
-
 }
 
-
 .reykjaviksection img {
-
   width: 100%;
-
 }
 
 .landingproductimage {
-
   display: none;
-
 }
 
 .imagehover {
-
   display: none;
-
 }
-
-
- 
 
 /* Landing Page Carousel*/
 
- 
-
 .landingcarousel1 {
-
   width: 100vw;
 
   height: 100vh;
 
   position: relative;
-
 }
 
- 
-
 .landingmain .slide1 {
-
   position: absolute;
 
   inset: 0;
@@ -1891,35 +1242,23 @@ main.productmain {
   transition: 200ms opacity ease-in-out;
 
   transition-delay: 200ms;
-
 }
 
- 
-
 .landingcarousel1 ul {
-
   margin: 0;
 
   padding: 0;
 
   list-style: none;
-
 }
 
- 
-
 .landingmain .slide1[data-active] {
-
   opacity: 1;
 
   transition-delay: 0ms;
-
 }
 
- 
-
 .slide1 img {
-
   display: block;
 
   width: 100%;
@@ -1929,13 +1268,9 @@ main.productmain {
   object-fit: cover;
 
   object-position: center;
-
 }
 
- 
-
 .landingcarousel-button1 {
-
   position: absolute;
 
   background: none;
@@ -1957,55 +1292,33 @@ main.productmain {
   padding: 0.5rem;
 
   background-color: rgba(0, 0, 0, 0.01);
-
 }
 
- 
-
 .landingcarousel-button1:hover,
-
 .landingcarousel-button1:focus {
-
   color: var(--clr-pri);
 
   background-color: rgba(0, 0, 0, 0.2);
-
 }
-
- 
 
 .landingcarousel-button1.prev {
-
   left: 1rem;
-
 }
-
- 
 
 .landingcarousel-button1.next {
-
   right: 1rem;
-
 }
 
- 
-
 @media screen and (min-width: 700px) {
-
   .landingproductimage {
-
     display: block;
-
   }
 
   .navimg {
-
     min-height: 86vh;
-
   }
 
   .navcontainer {
-
     display: block;
 
     width: 100%;
@@ -2013,15 +1326,11 @@ main.productmain {
     height: 100%;
 
     position: absolute;
-
   }
-
- 
 
   /* The navbar */
 
   .topnav {
-
     overflow: hidden;
 
     display: grid;
@@ -2035,15 +1344,11 @@ main.productmain {
     height: 100%;
 
     margin: auto;
-
   }
-
- 
 
   /* Navbar links */
 
   .topnav a {
-
     font-family: var(--ff-heading);
 
     float: left;
@@ -2052,7 +1357,7 @@ main.productmain {
 
     text-align: center;
 
-    padding: 5% ;
+    padding: 5%;
 
     text-decoration: none;
 
@@ -2069,88 +1374,57 @@ main.productmain {
     display: grid;
 
     align-content: center;
-
   }
 
- 
-
   .leftnav {
-
     justify-content: start;
 
     margin-left: 1rem;
 
     display: grid;
-
   }
 
- 
-
   .rightnav {
-
     justify-content: end;
 
     margin-right: 1rem;
-
   }
 
-
-  .topnav a:link{
-
+  .topnav a:link {
     text-decoration: none;
     background-color: transparent;
-
   }
-  .topnav a:visited{
-
+  .topnav a:visited {
     background-color: transparent;
     text-decoration: none;
-
   }
 
   .topnav a:hover {
-
     color: var(--clr-pri);
-
   }
 
- 
-  .topnav a:active{
-
+  .topnav a:active {
     text-decoration: none;
-background-color: transparent;
+    background-color: transparent;
   }
 
   .landingsecondimg {
-
     display: grid;
 
     justify-content: center;
-
   }
 
- 
-
   .landingsecondimg img {
-
     max-width: 200px;
 
     padding: 2rem;
-
   }
-
- 
 
   .landingcarousel1 {
-
     display: none;
-
   }
 
-
-
   .welcomesection {
-
     display: grid;
 
     grid-template-columns: 1fr 1fr;
@@ -2164,13 +1438,9 @@ background-color: transparent;
     background-color: #000;
 
     height: 400px;
-
   }
 
- 
-
   .welcome1 {
-
     display: grid;
 
     gap: 1px;
@@ -2178,52 +1448,35 @@ background-color: transparent;
     grid-template-rows: 1fr 3fr;
 
     height: 400px;
-
   }
 
   .welcome2 {
-
-    background-image: url("content/family.webp");
+    background-image: url("../content/family.webp");
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
   }
- 
 
   .welcomesection p,
-
   .welcomesection h2 {
-
     max-width: 450px;
-
   }
 
- 
-
   .landingpagenav {
-
     display: grid;
 
     grid-template-columns: 1fr 1fr 1fr;
 
     gap: 1px;
-
   }
 
- 
-
   .landingpagenav a:hover {
-
     background-color: #000;
 
     color: #fafaf7;
-
   }
 
- 
-
   .landingpagenav a {
-
     display: flex;
 
     justify-content: center;
@@ -2239,135 +1492,91 @@ background-color: transparent;
     padding-top: 1rem;
 
     padding-bottom: 1rem;
-
   }
-
- 
 
   .sectionsecondimg {
-
     display: block;
-
   }
 
- 
-
   .totayamasection,
-
   .reykjaviksection {
-
     display: grid;
 
     grid-template-columns: 1fr 1fr;
 
     grid-template-rows: 0.2fr 0.7fr 2.5fr;
-
   }
 
-    #firstMacro {
-      background-image: url("content/totyamaFlaskMacro.webp");
-      background-size: cover;
-      background-position: 50%;
-    }
+  #firstMacro {
+    background-image: url("../content/totyamaFlaskMacro.webp");
+    background-size: cover;
+    background-position: 50%;
+  }
 
-    #secondMacro {
-      background-image: url("content/gallokenFlaskMacro.webp");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+  #secondMacro {
+    background-image: url("../content/gallokenFlaskMacro.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-    }
-
-    #thirdMacro {
-      background-image: url("content/icelandCupContext.webp");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-
-    }
+  #thirdMacro {
+    background-image: url("../content/icelandCupContext.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   .totayamasection .sectionsecondimg,
-
   .reykjaviksection .sectionsecondimg {
-
     grid-column-start: 2;
 
     grid-row-start: 1;
 
     grid-row-end: 4;
-
   }
 
- 
-
   .sectionsecondimg {
-
     display: grid;
 
     align-items: center;
-
   }
 
- 
-
   .gallokkensection p,
-
   .totayamasection p,
-
   .reykjaviksection p {
-
     max-width: 500px;
 
     margin: auto;
-
   }
 
- 
-
   .gallokkensection {
-
     display: grid;
 
     grid-template-columns: 1fr 1fr;
 
     grid-template-rows: 0.7fr 1fr 2.3fr;
-
   }
 
- 
-
   .gallokkensection .sectionsecondimg {
-
     grid-column-start: 1;
 
     grid-row-start: 1;
 
     grid-row-end: 4;
-
   }
 
- 
-
   .landingmain p {
-
     display: grid;
 
     margin-left: 1rem;
-
   }
-
- 
 
   .landingproductimage img {
-
     max-height: 300px;
-
   }
 
- 
-
   .landingproductimage {
-
     position: relative;
 
     display: grid;
@@ -2375,13 +1584,9 @@ background-color: transparent;
     justify-content: center;
 
     align-content: center;
-
   }
 
- 
-
   .imagehover {
-
     position: absolute;
 
     display: grid;
@@ -2406,20 +1611,12 @@ background-color: transparent;
 
     padding: 0rem;
 
- 
-
     /* transition effect. not necessary */
 
     transition: opacity 0.2s, visibility 0.2s;
-
   }
 
-
-
- 
-
   .imagehover .price {
-
     display: grid;
 
     max-width: 100%;
@@ -2435,13 +1632,9 @@ background-color: transparent;
     border-top: 1px solid black;
 
     padding-right: 1rem;
-
   }
 
- 
-
   .imagehover a {
-
     display: grid;
 
     justify-content: end;
@@ -2459,66 +1652,37 @@ background-color: transparent;
     font-family: var(--ff-main);
 
     color: #000;
-
   }
 
   .imagehover a:hover {
-
     background-color: black;
 
     color: #fafaf7;
   }
 
- 
-
-
- 
-
   .landingproductimage:hover .imagehover {
-
     visibility: visible;
 
     opacity: 1;
-
   }
-
- 
-
-
 }
-
- 
 
 /* our products page Caroline  */
 
- 
-
 .ourproductsmain p,
-
 .ourproductsmain h2,
-
 .ourproductsmain h3,
-
 .ourproductsmain h4,
-
 .ourproductsmain h5,
-
 .ourproductsmain h6,
-
 .ourproductsmain p,
-
 .ourproductsmain a {
-
   padding-top: 1rem;
 
   padding-bottom: 1rem;
-
 }
 
- 
-
 .ourproductsmain img {
-
   display: block;
 
   width: 100%;
@@ -2528,54 +1692,36 @@ background-color: transparent;
   object-fit: cover;
 
   object-position: center;
-
 }
 
 .ourproductsmain .heroimage {
-
   height: 50vh;
-  background-image: url("content/macroJapCup.webp");
+  background-image: url("../content/macroJapCup.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   grid-column: 1/-1;
-
 }
 
- 
-
 .ourproductsmain {
-
   display: grid;
 
   grid-template-columns: 1fr 1fr;
 
   gap: var(--grid-gap);
-
 }
-
- 
 
 .ourproductsmain .shopby {
-
   grid-column: 1/-1;
-
 }
 
- 
-
 .ourproductsmain .shopby h2 {
-
   text-align: center;
 
   text-transform: uppercase;
-
 }
 
- 
-
 .ourproductsmain nav.materialnav {
-
   grid-column: 1/-1;
 
   display: grid;
@@ -2583,103 +1729,58 @@ background-color: transparent;
   grid-template-columns: 1fr 1fr;
 
   gap: var(--grid-gap);
-
 }
 
- 
-
 .ourproductsmain .materialnav h2 {
-
   text-align: center;
 
   font-size: 1.2rem;
-
 }
-
- 
 
 .ourproductsmain nav.countrynav {
-
   grid-column: 1/-1;
-
   display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
   gap: var(--grid-gap);
-
-
 }
 
- 
-
 .ourproductsmain .countrynav h2 {
-
   text-align: center;
 
   font-size: 1rem;
-
 }
-
- 
 
 .ourproductsmain .firstproductimage {
-
   grid-column: 1/-1;
-
 }
 
- 
-
 .ourproductsmain a:hover,
-
 a:focus {
-
   background-color: black;
   fill: var(--clr-pri);
   color: #fafaf7;
-
 }
 
- 
-
 .ourproductsmain .productcard:hover .imagehover {
-
   visibility: visible;
 
   opacity: 1;
-
 }
-
-
- 
 
 .ourproductsmain .productcard {
-
   position: relative;
-
 }
 
- 
-
 @media screen and (min-width: 768px) {
-
   .ourproductsmain {
-
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
   }
 
   .ourproductsmain .firstproductimage {
-
     grid-column: 3 / -1;
 
     grid-row: 5 / span 2;
 
     order: 2;
-
   }
-
-
 }
-

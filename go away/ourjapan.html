@@ -3,19 +3,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>Our Products</title>
+
     <link rel="stylesheet" href="css/style.css" />
-
     <link rel="stylesheet" href="css/footer.css" />
-
-    <title>Comission Us</title>
+  </head>
 
   <body>
     <header class="header">
-      <a href="index.html"><h1 id="headerTitleDesktop">GERNER JAHNCKE</h1></a>
+      <h1 id="headerTitleDesktop">GERNER JAHNCKE</h1>
 
       <svg
         id="headerTitleMobile"
@@ -138,62 +139,53 @@
 
       <div id="navProcess"><a href="ourprocess.html">Our Process</a></div>
 
-      <div id="navComission"><a href="comission.html">Comission Us</a></div>
+      <div id="navComission"><a href="/comission.html">Comission Us</a></div>
 
-      <div id="navContact"><a href="contactus.html">Contact Us</a></div>
+      <div id="navContact"><a href="/contactus.html">Contact Us</a></div>
 
       <div id="navCart"><a href="">Cart</a></div>
     </div>
 
-    <main class="comissionmain">
-      <div class="container comissionheroimg"></div>
+    <main class="ourproductsmain ourproductsjapan">
+      <div class="container heroimage"></div>
 
-      <div class="comissionnav">
-        <a class="container" href="#formerWork">Former Work</a>
-
-        <a class="container" href="#comission">Comission</a>
-      </div>
-      <a id="comission"></a>
-      <div class="comissionintrosection" id="#comission">
-        <div class="container comissionsecondimage" id="comissionimg2"></div>
-
-        <div class="container">
-          <p>
-            For comission and wholesale inquiries, please get in contact with us
-            at: wholesale@gernerjahncke.dk
-          </p>
-        </div>
+      <div class="container shopby">
+        <h2>Shop by Collection</h2>
       </div>
 
-      <div class="container">
-        <a id="formerWork"></a>
-        <h2>Former Work</h2>
-      </div>
+      <nav class="materialnav">
+        <a class="container ceramicbutton" href=""><h2>Ceramics</h2></a>
+        <a class="container glassbutton" href=""><h2>Glass</h2></a>
+      </nav>
 
-      <div class="formerworkgrid" id="#formerwork">
-        <div class="formerworksection">
-          <div class="container">
-            <h3>Restaurant Lyst</h3>
+      <nav class="countrynav">
+        <a id="denmark_button" class="container" href="ourproducts.html"
+          ><h2>Denmark</h2></a
+        >
+        <a id="japan_button" class="container" href="ourjapan.html"
+          ><h2>Japan</h2></a
+        >
+        <a id="iceland_button" class="container" href="ouriceland.html"
+          ><h2>Iceland</h2></a
+        >
+      </nav>
 
-            <h4>Fjordenshus, Denmark</h4>
+      <template id="product_card">
+        <div class="container productcard">
+          <img src="" alt="A Gerner Jahncke flask" />
 
-            <h5>2021</h5>
+          <div class="imagehover">
+            <h2></h2>
+
+            <p class="price">280</p>
+
+            <a href="">Learn more</a>
           </div>
-
-          <div class="container" id="formerWorkImg1"></div>
         </div>
+      </template>
 
-        <div class="formerworksection">
-          <div class="container">
-            <h3>Restaurant Lyst</h3>
-
-            <h4>Fjordenshus, Denmark</h4>
-
-            <h5>2021</h5>
-          </div>
-
-          <div class="container" id="formerWorkImg2"></div>
-        </div>
+      <div class="container firstproductimage productcard">
+        <img src="content/on_table_situ.webp" alt="A Gerner Jahncke Cup" />
       </div>
     </main>
 
@@ -282,7 +274,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="JS/ourjapan.js"></script>
     <script src="JS/hamburger.js"></script>
   </body>
 </html>

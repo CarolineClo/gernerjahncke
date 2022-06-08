@@ -4,11 +4,8 @@
 window.addEventListener("load", setup);
 const endpoint = "http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/";
 function setup() {
-  //getMaterials();
-  //getCategories();
   getDenmark();
-  //getIceland();
-  //getJapan();
+  getCategories();
 }
 
 const denmark_button = document.querySelector("#denmark_button");
@@ -21,7 +18,6 @@ function getDenmark() {
 }
 
 function setupDenmark(prodArray) {
-  console.log(prodArray);
   const template = document.querySelector("template#product_card").content;
   const parentElement = document.querySelector("main");
   prodArray.forEach((prod) => {
@@ -37,7 +33,42 @@ function setupDenmark(prodArray) {
   });
 }
 
-let iceland_button = document.querySelector("#iceland_button");
+function getCategories() {
+  fetch(endpoint + "categories?parent=5")
+    .then((res) => res.json())
+    .then(setupCategories);
+}
+
+function setupCategories(catArray) {
+  const template = document.querySelector("template#collection_button").content;
+  const parentElement = document.querySelector(".countrynav");
+  catArray.forEach((cat) => {
+    const copy = template.cloneNode(true);
+    copy.querySelector("h2").textContent = cat.name;
+
+    parentElement.appendChild(copy);
+  });
+}
+
+/*
+function getMaterials() {
+    fetch(endpoint + "categories?parent=14")
+    .then(res => res.json())
+    .then(setupMaterials);
+}
+
+function setupMaterials(matArray) {
+const template = document.querySelector("template#material_button").content;
+const parentElement = document.querySelector(".materialnav");
+matArray.forEach(mat => {
+    const copy = template.cloneNode(true);
+    copy.querySelector("h2").textContent = mat.name;
+    parentElement.appendChild(copy);
+});
+}
+
+
+const iceland_button = document.querySelector("#iceland_button");
 iceland_button.addEventListener("click", getIceland);
 
 function getIceland() {
@@ -59,6 +90,7 @@ function setupIceland(iceArray) {
     parentElement.appendChild(copy);
   });
 }
+
 
 const japan_button = document.getElementById("japan_button");
 japan_button.addEventListener("click", getJapan);
@@ -82,39 +114,5 @@ function setupJapan(japArray) {
     copy.querySelector("p.price").textContent = prod.price;
     parentElement.appendChild(copy);
   });
-}
-
-/*function getCategories() {
-    fetch(endpoint + "categories?parent=5")
-    .then(res => res.json())
-    .then(setupCategories);
-    
-}
-
-function setupCategories(catArray) {
-const template = document.querySelector("template#collection_button").content;
-const parentElement = document.querySelector(".countrynav");
-catArray.forEach(cat => {
-    const copy = template.cloneNode(true);
-    copy.querySelector("h2").textContent = cat.name;
-    parentElement.appendChild(copy);
-    
-});
-}
-
-function getMaterials() {
-    fetch(endpoint + "categories?parent=14")
-    .then(res => res.json())
-    .then(setupMaterials);
-}
-
-function setupMaterials(matArray) {
-const template = document.querySelector("template#material_button").content;
-const parentElement = document.querySelector(".materialnav");
-matArray.forEach(mat => {
-    const copy = template.cloneNode(true);
-    copy.querySelector("h2").textContent = mat.name;
-    parentElement.appendChild(copy);
-});
 }
 */
