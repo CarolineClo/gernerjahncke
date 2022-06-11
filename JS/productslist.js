@@ -3,11 +3,14 @@
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
+console.log(urlParams.get("id"));
 
-let url = "http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/product";
+const url =
+  "http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/product?categories=" +
+  `${id}&_embed`;
 
 if (id) {
-  url += `?q={"categories": "${id}&_embed"}`;
+  url += `?categories={"id": "${id}&_embed"}`;
 }
 
 console.log(url);
