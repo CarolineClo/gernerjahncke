@@ -126,8 +126,8 @@ h4,
 h5,
 h6,
 p {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #homeLogo:hover {
