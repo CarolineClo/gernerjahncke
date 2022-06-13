@@ -34,3 +34,25 @@ function setupCollection(catArray) {
     parentElement.appendChild(copy);
   });
 }
+/*
+function getCategories() {
+    fetch(endpoint + "categories?parent=5")
+      .then((res) => res.json())
+      .then(setupCategories);
+  }
+  
+  function setupCategories(catArray) {
+    const template = document.querySelector("template#collection_button").content;
+    const parentElement = document.querySelector(".countrynav");
+    catArray.forEach((cat) => {
+      const copy = template.cloneNode(true);
+      copy.querySelector("h2").textContent = cat.name;
+      copy
+        .querySelector("a")
+        .setAttribute(
+          "href",
+          `productslist.html?product&collection=${cat.id}&_embed`
+        );
+      parentElement.appendChild(copy);
+    });
+  }*/
