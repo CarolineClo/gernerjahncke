@@ -58,6 +58,10 @@ body {
   display: none;
 }
 
+#underHeader g {
+  font-family: var(--ff-header);
+}
+
 #hamburger {
   padding-right: 5%;
 }
@@ -1675,11 +1679,21 @@ main.productmain {
 .ourproductsmain h4,
 .ourproductsmain h5,
 .ourproductsmain h6,
-.ourproductsmain p,
-.ourproductsmain a {
+.ourproductsmain p {
   padding-top: 1rem;
 
   padding-bottom: 1rem;
+}
+
+.ourproductsmain button {
+  border-style: none;
+}
+
+.ourproductsmain button:hover,
+button:focus {
+  background-color: black;
+  fill: var(--clr-pri);
+  color: #fafaf7;
 }
 
 .ourproductsmain img {
