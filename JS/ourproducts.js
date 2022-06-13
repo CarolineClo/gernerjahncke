@@ -4,20 +4,20 @@
 window.addEventListener("load", setup);
 const endpoint = "http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/";
 function setup() {
-  getDenmark();
+  getEverything();
   getCategories();
 }
 
 //const denmark_button = document.querySelector("#denmark_button");
 //denmark_button.addEventListener("click", getDenmark);
 
-function getDenmark() {
-  fetch(endpoint + "product?categories=6&_embed")
+function getEverything() {
+  fetch(endpoint + "product?categories=16&per_page=100&_embed")
     .then((res) => res.json())
-    .then(setupDenmark);
+    .then(setupEverything);
 }
 
-function setupDenmark(prodArray) {
+function setupEverything(prodArray) {
   const template = document.querySelector("template#product_card").content;
   const parentElement = document.querySelector("main");
   prodArray.forEach((prod) => {
@@ -45,9 +45,13 @@ function setupCategories(catArray) {
   catArray.forEach((cat) => {
     const copy = template.cloneNode(true);
     copy.querySelector("h2").textContent = cat.name;
+    copy.querySelector("a");
     copy
       .querySelector("a")
-      .setAttribute("href", `productslist.html?categories=${cat.id}&_embed`);
+      .setAttribute(
+        "href",
+        `productslist.html?product&categories=${cat.id}&_embed`
+      );
     parentElement.appendChild(copy);
   });
 }

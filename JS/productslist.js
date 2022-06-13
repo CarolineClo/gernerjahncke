@@ -2,15 +2,14 @@
 //"http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/product?categories=6&_embed";
 
 const urlParams = new URLSearchParams(window.location.search);
-const id = urlParams.get("id");
-console.log(urlParams.get("id"));
+const categories = urlParams.get("categories");
+console.log(urlParams.get("categories"));
 
-const url =
-  "http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/product?categories=" +
-  `${id}&_embed`;
+let url =
+  "http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/product?categories=";
 
-if (id) {
-  url += `?categories={"id": "${id}&_embed"}`;
+if (categories) {
+  url += `${categories}&_embed`;
 }
 
 console.log(url);
@@ -24,8 +23,8 @@ function setupCollection(catArray) {
     console.log(prod);
     const template = document.querySelector("template#product_card").content;
     const copy = template.cloneNode(true);
-    //copy.querySelector("img").src =
-    //  prod._embedded["wp:featuredmedia"][0].source_url;
+    copy.querySelector("img").src =
+      prod._embedded["wp:featuredmedia"][0].source_url;
     copy.querySelector("h2").textContent = prod.product_name;
     copy.querySelector("p.price").textContent = prod.price;
     copy
