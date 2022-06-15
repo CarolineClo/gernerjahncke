@@ -205,13 +205,14 @@ p {
   #navLogo > svg {
     padding-left: 17%;
   }
+  #navLogo img {
+    width: 80%;
+  }
 
   #underHeader {
     display: grid;
 
     grid-template-columns: repeat(6, 1fr);
-
-    width: 100vw;
 
     height: 120px;
 
@@ -951,8 +952,9 @@ p {
   cursor: pointer;
 }
 
-.blackbackground {
+.selected {
   background-color: var(--clr-sec);
+  color: var(--clr-pri);
 }
 
 .productmain .moreproducts {
@@ -1689,8 +1691,7 @@ main.productmain {
   border-style: none;
 }
 
-.ourproductsmain button:hover,
-button:focus {
+.ourproductsmain button:hover {
   background-color: black;
   fill: var(--clr-pri);
   color: #fafaf7;
@@ -1753,7 +1754,14 @@ button:focus {
 
 .ourproductsmain nav.countrynav {
   grid-column: 1/-1;
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  gap: var(--grid-gap);
+}
+
+.ourproductsmain nav.showcountrynav {
   display: grid;
+  grid-column: 1/-1;
   grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
   gap: var(--grid-gap);
 }
@@ -1768,8 +1776,7 @@ button:focus {
   grid-column: 1/-1;
 }
 
-.ourproductsmain a:hover,
-a:focus {
+.ourproductsmain a:hover {
   background-color: black;
   fill: var(--clr-pri);
   color: #fafaf7;
@@ -1798,7 +1805,9 @@ a:focus {
     order: 2;
   }
 
-  .ourproductslist .productslistimage {
+  .ourproductsmain .productslistimage {
+    grid-column: 3 / -1;
     grid-row: 4 / span 2;
+    order: 2;
   }
 }

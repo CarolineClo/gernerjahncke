@@ -1,5 +1,5 @@
 //const url =
-//"http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/product?categories=6&_embed";
+//"http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/product?categories=${6}&_embed";
 
 const urlParams = new URLSearchParams(window.location.search);
 const categories = urlParams.get("categories");

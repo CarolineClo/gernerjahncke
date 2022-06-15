@@ -1,5 +1,5 @@
-//if (collection) {
-//  endpoint += `?q={"Collection": "${collection}"}`;
+//const denmark_button = document.querySelector("#denmark_button");
+//denmark_button.addEventListener("click", getDenmark);
 
 window.addEventListener("load", setup);
 const endpoint = "http://michalinaoniszczuk.com/examwp/wp-json/wp/v2/";
@@ -7,9 +7,6 @@ function setup() {
   getEverything();
   getCategories();
 }
-
-//const denmark_button = document.querySelector("#denmark_button");
-//denmark_button.addEventListener("click", getDenmark);
 
 function getEverything() {
   fetch(endpoint + "product?categories=16&per_page=100&_embed")
