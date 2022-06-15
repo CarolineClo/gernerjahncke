@@ -63,7 +63,8 @@ body {
 }
 
 #hamburger {
-  padding-right: 5%;
+  padding-left: 65%;
+  padding-bottom: 3%;
 }
 
 #dropDown {
@@ -249,6 +250,10 @@ p {
     text-align: center;
   }
 
+  #underHeader > div > a:hover {
+    color: #c77133;
+  }
+
   #navlogo:hover {
     cursor: pointer;
   }
@@ -268,7 +273,7 @@ p {
   }
 
   /* Header Stuff ENDS ///////////////////////////////////////// */
-
+  /* contact page on  mobile*/
   .contactmain {
     display: grid;
 
@@ -300,7 +305,7 @@ p {
   }
 }
 
-/*COMISSION PAGE*/
+/*COMISSION PAGE on mobile*/
 
 .comissionmain {
   display: flex;
@@ -399,6 +404,7 @@ p {
   padding-bottom: 1rem;
 }
 
+/* commision page desktop */
 @media screen and (min-width: 700px) {
   .comissionnav,
   .comissionsecondimage {
@@ -480,7 +486,7 @@ p {
   }
 }
 
-/*OUR PROCESS PAGE*/
+/*OUR PROCESS PAGE mobile*/
 
 .ourprocessmain {
   display: flex;
@@ -661,7 +667,7 @@ p {
 
   padding-bottom: 1rem;
 }
-
+/* process page desktop */
 @media screen and (min-width: 600px) {
   .processvideosection {
     display: grid;
@@ -1009,6 +1015,25 @@ main.productmain {
   color: var(--clr-pri);
 }
 
+.breadcrumbs {
+  list-style: "/";
+  display: flex;
+  text-transform: uppercase;
+}
+
+.breadcrumbs p {
+  padding: 0;
+}
+
+.breadcrumbs a:hover {
+  color: #c77133;
+}
+
+.ourproductslist .breadcrumbs p {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+/* pruduct page tablet */
 @media screen and (min-width: 500px) {
   .productmain .deskviewimages {
     background-color: var(--clr-sec);
@@ -1043,6 +1068,9 @@ main.productmain {
   .productmain .mobileslide {
     display: none;
   }
+  .breadcrumbs a:hover {
+    color: #c77133;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1054,14 +1082,21 @@ main.productmain {
     grid-template-columns: 50% 1fr;
   }
 
+  .breadcrumbs {
+    grid-column: 1/ -1;
+  }
+  .breadcrumbs a:hover {
+    color: #c77133;
+  }
+
   .productmain .deskviewimages {
     grid-column: 1 / 2;
-
-    grid-row: 1/ 3;
+    grid-row: 2/ 5;
   }
 
   .productmain .productinfo {
     grid-column: 3/-1;
+    grid-row: 2/3;
   }
 
   .productmain .morefrom {
@@ -1373,8 +1408,6 @@ main.productmain {
 
     align-content: center;
 
-    /* text-transform: uppercase; */
-
     font-weight: var(--l-bold);
 
     display: grid;
@@ -1478,7 +1511,6 @@ main.productmain {
 
   .landingpagenav a:hover {
     background-color: #000;
-
     color: #fafaf7;
   }
 
@@ -1560,8 +1592,6 @@ main.productmain {
     display: grid;
 
     grid-template-columns: 1fr 1fr;
-
-    grid-template-rows: 0.7fr 1fr 2.3fr;
   }
 
   .gallokkensection .sectionsecondimg {
@@ -1611,9 +1641,7 @@ main.productmain {
 
     color: var(--clr-sec);
 
-    visibility: hidden;
-
-    opacity: 0;
+    opacity: 1;
 
     padding: 0rem;
 
@@ -1778,10 +1806,12 @@ main.productmain {
   color: #fafaf7;
 }
 
-.ourproductsmain .productcard:hover .imagehover {
-  visibility: visible;
+.breadcrumbs a:hover {
+  color: #c77133;
+}
 
-  opacity: 1;
+.imagehover {
+  opacity: 0;
 }
 
 .ourproductsmain .productcard {
@@ -1796,6 +1826,9 @@ main.productmain {
   .ourproductsmain {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  .imagehover {
+    opacity: 0;
+  }
 
   .ourproductsmain .firstproductimage {
     grid-column: 3 / -1;
@@ -1809,5 +1842,9 @@ main.productmain {
     grid-column: 3 / -1;
     grid-row: 4 / span 2;
     order: 2;
+  }
+
+  .imagehover {
+    visibility: hidden;
   }
 }

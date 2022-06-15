@@ -32,8 +32,10 @@ function setupCollection(catArray) {
       .setAttribute("href", `productpage.html?id=${prod.id}`);
     const parentElement = document.querySelector("main");
     parentElement.appendChild(copy);
+    document.querySelector(".collectionName").textContent = prod.collection;
   });
 }
+
 /*
 function getCategories() {
     fetch(endpoint + "categories?parent=5")

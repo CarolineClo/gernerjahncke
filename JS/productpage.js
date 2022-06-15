@@ -11,9 +11,19 @@ fetch(url)
 
 function handleData(product) {
   console.log(product);
+  document.querySelector(".productNameBreadcrumbs").textContent =
+    product.product_name;
+  document.querySelector(".collectionName").textContent = product.collection;
+  document
+    .querySelector(".collectionLink")
+    .setAttribute(
+      "href",
+      `productslist.html?product&categories=${product.categories[1]}&_embed`
+    );
   document.querySelector(".product_name").textContent = product.product_name;
-  document.querySelector(".product_description").textContent =
-    product.description;
+  document.querySelector(
+    ".product_description"
+  ).textContent = `${product.collection} /`;
   document.querySelector(".capacity").textContent = `${product.capacity}ml`;
   document.querySelector(".height").textContent = `Height: ${product.height}mm`;
   document.querySelector(".width").textContent = `Width: ${product.width}mm`;
