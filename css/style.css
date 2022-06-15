@@ -1772,10 +1772,6 @@ main.productmain {
   font-size: 1rem;
 }
 
-.ourproductsmain .firstproductimage {
-  grid-column: 1/-1;
-}
-
 .ourproductsmain a:hover {
   background-color: black;
   fill: var(--clr-pri);
@@ -1790,6 +1786,10 @@ main.productmain {
 
 .ourproductsmain .productcard {
   position: relative;
+}
+
+.ourproductsmain .productslistimage {
+  grid-column: 1/-1;
 }
 
 @media screen and (min-width: 768px) {
