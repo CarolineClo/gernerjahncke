@@ -21,9 +21,8 @@ function handleData(product) {
       `productslist.html?product&categories=${product.categories[1]}&_embed`
     );
   document.querySelector(".product_name").textContent = product.product_name;
-  document.querySelector(
-    ".product_description"
-  ).textContent = `${product.collection} /`;
+  document.querySelector(".product_description").textContent =
+    product.description;
   document.querySelector(".capacity").textContent = `${product.capacity}ml`;
   document.querySelector(".height").textContent = `Height: ${product.height}mm`;
   document.querySelector(".width").textContent = `Width: ${product.width}mm`;
