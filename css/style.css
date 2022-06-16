@@ -1793,7 +1793,7 @@ main.productmain {
     text-transform: uppercase;
 
     font-family: var(--ff-main);
-    background-color: #fafaf7;
+    background: rgba(0, 0, 0, 0.1);
 
     color: #000;
   }

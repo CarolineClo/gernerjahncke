@@ -33,6 +33,7 @@ function setupCollection(catArray) {
     const parentElement = document.querySelector("main");
     parentElement.appendChild(copy);
     document.querySelector(".collectionName").textContent = prod.collection;
+    document.querySelector(".materialName").textContent = prod.material;
   });
 }
 

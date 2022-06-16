@@ -20,6 +20,7 @@ function handleData(product) {
       "href",
       `productslist.html?product&categories=${product.categories[1]}&_embed`
     );
+  document.querySelector(".materialName").textContent = product.material;
   document.querySelector(".product_name").textContent = product.product_name;
   document.querySelector(".product_description").textContent =
     product.description;
