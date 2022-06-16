@@ -30,8 +30,6 @@ function setupCollection(catArray) {
     copy
       .querySelector("a")
       .setAttribute("href", `productpage.html?id=${prod.id}`);
-    copy.document.querySelector(".product_descrption").textContent =
-      prod.product_discription;
     const parentElement = document.querySelector("main");
     parentElement.appendChild(copy);
     document.querySelector(".collectionName").textContent = prod.collection;
