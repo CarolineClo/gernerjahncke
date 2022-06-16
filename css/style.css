@@ -546,6 +546,11 @@ p {
   padding-top: 1rem;
 
   padding-bottom: 1rem;
+  background-image: url(../content/textureColour.png);
+}
+
+.ourprocessnav a:hover {
+  background-image: none;
 }
 
 .aboutussectionmobileimg {
@@ -876,6 +881,92 @@ p {
   opacity: 1;
 }
 
+.landingproductimage img {
+  max-height: 300px;
+}
+
+.landingproductimage {
+  position: relative;
+
+  display: grid;
+
+  justify-content: center;
+
+  align-content: center;
+}
+
+.imagehover {
+  position: absolute;
+
+  display: grid;
+
+  grid-template-rows: 1fr 0.4fr 0.4fr;
+
+  top: 0;
+
+  bottom: 0;
+
+  left: 0;
+
+  right: 0;
+
+  background: rgba(0, 0, 0, 0.1);
+
+  color: var(--clr-sec);
+
+  opacity: 1;
+
+  padding: 0rem;
+
+  /* transition effect. not necessary */
+
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.imagehover .price {
+  display: grid;
+
+  max-width: 100%;
+
+  margin: 0;
+
+  justify-content: end;
+
+  align-content: center;
+
+  text-decoration: none;
+
+  border-top: 1px solid black;
+
+  padding-right: 1rem;
+}
+
+.imagehover a {
+  display: grid;
+
+  justify-content: end;
+
+  align-content: center;
+
+  text-decoration: none;
+
+  border-top: 1px solid black;
+
+  padding-right: 1rem;
+
+  text-transform: uppercase;
+
+  font-family: var(--ff-main);
+
+  color: #000;
+}
+
+.imagehover a:hover {
+  background-color: black;
+
+  color: #fafaf7;
+}
+
 /* carousel mobile view */
 
 .productmain .carousel {
@@ -1022,6 +1113,7 @@ main.productmain {
 .breadcrumbs {
   list-style: "/";
   display: flex;
+  flex-wrap: wrap;
   text-transform: uppercase;
   grid-column: 1/ -1;
 }
@@ -1532,6 +1624,11 @@ main.productmain {
     padding-top: 1rem;
 
     padding-bottom: 1rem;
+    background-image: url(../content/textureColour2.png);
+  }
+
+  .landingpagenav a:hover {
+    background-image: none;
   }
 
   .sectionsecondimg {
@@ -1819,8 +1916,16 @@ main.productmain {
   grid-column: 1/-1;
 }
 
+.ourproductslist .shopby h2:hover {
+  color: #c77133;
+}
+
+#first_container_footer a:hover {
+  color: #c77133;
+}
+
 /* desktop view */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .ourproductsmain {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

@@ -22,7 +22,7 @@ function setupEverything(prodArray) {
     copy.querySelector("img").src =
       prod._embedded["wp:featuredmedia"][0].source_url;
     copy.querySelector("h2").textContent = prod.product_name;
-    copy.querySelector("p.price").textContent = prod.price;
+    copy.querySelector("p.price").textContent = `${prod.price} DKK`;
     copy
       .querySelector("a")
       .setAttribute("href", `productpage.html?id=${prod.id}`);
