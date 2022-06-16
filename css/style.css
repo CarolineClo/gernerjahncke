@@ -1250,6 +1250,10 @@ main.productmain {
   background-color: #000;
 }
 
+.productcard {
+  min-height: 220px;
+}
+
 .navimg {
   background-image: url("../content/tableSitu.webp");
 
