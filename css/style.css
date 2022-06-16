@@ -958,14 +958,16 @@ p {
 
   font-family: var(--ff-main);
 
-  color: #000;
-}
-
-.imagehover a:hover {
   background-color: black;
 
   color: #fafaf7;
 }
+
+/* .imagehover a:hover { 
+  background-color: black;
+
+  color: #fafaf7;
+}*/
 
 /* carousel mobile view */
 
@@ -1252,6 +1254,10 @@ main.productmain {
 
 .productcard {
   min-height: 220px;
+}
+
+.ourproductsmain .firstproductimage {
+  grid-column: 1/-1;
 }
 
 .navimg {
@@ -1787,6 +1793,7 @@ main.productmain {
     text-transform: uppercase;
 
     font-family: var(--ff-main);
+    background-color: #fafaf7;
 
     color: #000;
   }
