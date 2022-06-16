@@ -872,6 +872,10 @@ p {
   margin: 1rem;
 }
 
+.imagehover {
+  opacity: 1;
+}
+
 /* carousel mobile view */
 
 .productmain .carousel {
@@ -1019,6 +1023,7 @@ main.productmain {
   list-style: "/";
   display: flex;
   text-transform: uppercase;
+  grid-column: 1/ -1;
 }
 
 .breadcrumbs p {
@@ -1134,7 +1139,7 @@ main.productmain {
   }
 }
 
-/*LANDING PAGE */
+/*LANDING PAGE  mobile view */
 
 .landingmain {
   display: grid;
@@ -1259,10 +1264,6 @@ main.productmain {
   display: none;
 }
 
-.imagehover {
-  display: none;
-}
-
 /* Landing Page Carousel*/
 
 .landingcarousel1 {
@@ -1350,7 +1351,8 @@ main.productmain {
   right: 1rem;
 }
 
-@media screen and (min-width: 700px) {
+/* desktop view  */
+@media screen and (min-width: 800px) {
   .landingproductimage {
     display: block;
   }
@@ -1641,7 +1643,7 @@ main.productmain {
 
     color: var(--clr-sec);
 
-    opacity: 1;
+    opacity: 0;
 
     padding: 0rem;
 
@@ -1799,7 +1801,6 @@ main.productmain {
 
   font-size: 1rem;
 }
-
 .ourproductsmain a:hover {
   background-color: black;
   fill: var(--clr-pri);
@@ -1810,10 +1811,6 @@ main.productmain {
   color: #c77133;
 }
 
-.imagehover {
-  opacity: 0;
-}
-
 .ourproductsmain .productcard {
   position: relative;
 }
@@ -1822,12 +1819,14 @@ main.productmain {
   grid-column: 1/-1;
 }
 
+/* desktop view */
 @media screen and (min-width: 768px) {
   .ourproductsmain {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .imagehover {
-    opacity: 0;
+
+  .imagehover:hover {
+    opacity: 1;
   }
 
   .ourproductsmain .firstproductimage {
@@ -1842,9 +1841,5 @@ main.productmain {
     grid-column: 3 / -1;
     grid-row: 4 / span 2;
     order: 2;
-  }
-
-  .imagehover {
-    visibility: hidden;
   }
 }

@@ -17,9 +17,6 @@ buttons.forEach((button) => {
   });
 });
 
-
-
-
 /*window.addEventListener("load", setup);
 function setup() {
   getCategories();
